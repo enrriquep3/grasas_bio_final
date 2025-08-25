@@ -68,23 +68,38 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Gradient texts */
+.text-gradient-orange {
+  background: linear-gradient(to right, #ff7e29, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-gradient-green {
+  background: linear-gradient(to right, #16a34a, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Buttons */
 .btn-primary {
-  @apply bg-green-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-800 transition;
+  @apply bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition;
+}
+.btn-outline {
+  @apply border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-green-700 transition;
+}
+.btn-accent {
+  @apply bg-orange-500 text-white px-6 py-3 rounded-lg shadow hover:bg-orange-600 transition;
 }
 
-/* Navbar links active state */
-nav a.active {
-  color: #166534; /* Tailwind green-800 */
-  font-weight: 600;
+/* Cards */
+.card, .icon-card, .impact-card {
+  @apply bg-white shadow rounded-xl p-6 hover:shadow-lg transition;
 }
-
-/* Hero overlay */
-section[style*="background-image"]::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+.icon-card {
+  @apply flex flex-col items-center justify-center w-40 h-32;
+}
+.impact-card {
+  @apply text-center p-6 border border-gray-200 rounded-xl bg-white;
 }
 
 /* Dark Mode */
