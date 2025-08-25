@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normatividad - GrasasBio S.A.S.</title>
+    <meta name="description" content="Conoce el marco normativo que regula la gestión de aceites de cocina usados en Colombia. GrasasBio cumple con toda la legislación ambiental vigente.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link active">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link active">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-primary">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title font-monaco">NORMATIVIDAD</h1>
+                    <h2 class="hero-subtitle">Comprometidos con la ley y el medio ambiente</h2>
+                    <p class="hero-description">
+                        En GRASASBIO S.A.S. operamos bajo el cumplimiento estricto de la normatividad ambiental 
+                        vigente en Colombia y Bogotá para la gestión responsable del Aceite de Cocina Usado (ACU).
+                    </p>
+                    <p class="hero-description-small">
+                        Te acompañamos para que tu empresa también lo cumpla: con trazabilidad, 
+                        documentación al día y gestores certificados.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regulations Detail -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿Qué normas aplican al ACU?</h2>
+                    <p>Te presentamos las principales disposiciones legales que regulan la gestión de este residuo:</p>
+                </div>
+
+                <div class="regulations-detail">
+                    <!-- Resolución 0316 de 2018 -->
+                    <div class="regulation-detail-card card">
+                        <div class="regulation-header card-primary">
+                            <div class="regulation-title">
+                                <i data-lucide="scale"></i>
+                                <div>
+                                    <h3>RESOLUCIÓN 0316 DE 2018</h3>
+                                    <p>Ministerio de Ambiente y Desarrollo Sostenible</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regulation-body">
+                            <div class="regulation-info">
+                                <div class="info-section">
+                                    <div class="info-item">
+                                        <i data-lucide="map-pin"></i>
+                                        <span><strong>Ámbito:</strong> Nacional</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i data-lucide="file-text"></i>
+                                        <div>
+                                            <strong>Objetivo:</strong>
+                                            <p>Establecer requisitos para la gestión integral del ACU</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-section">
+                                    <div class="info-item">
+                                        <i data-lucide="users"></i>
+                                        <div>
+                                            <strong>Aplica a:</strong>
+                                            <ul>
+                                                <li>• Productores, distribuidores y comercializadores de aceite vegetal comestible</li>
+                                                <li>• Generadores (hogares, restaurantes, hoteles, industria)</li>
+                                                <li>• Gestores y transportadores</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="obligations-section">
+                                <div class="obligations-header">
+                                    <i data-lucide="check-circle"></i>
+                                    <strong>Obligaciones destacadas:</strong>
+                                </div>
+                                <div class="obligations-grid">
+                                    <div class="obligation-item">• Almacenar el ACU en recipientes adecuados</div>
+                                    <div class="obligation-item">• Entregarlo solo a gestores autorizados</div>
+                                    <div class="obligation-item">• Mantener registros de recolección</div>
+                                    <div class="obligation-item">• No verterlo en redes de alcantarillado o fuentes hídricas</div>
+                                    <div class="obligation-item">• Fomentar el aprovechamiento para biocombustibles</div>
+                                </div>
+                            </div>
+
+                            <div class="download-section">
+                                <a href="https://www.minambiente.gov.co/wp-content/uploads/2021/08/resolucion-0316-de-2018.pdf" 
+                                   target="_blank" class="btn btn-primary">
+                                    <i data-lucide="download"></i>
+                                    Descargar Norma Completa
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acuerdo 634 de 2015 -->
+                    <div class="regulation-detail-card card">
+                        <div class="regulation-header card-primary">
+                            <div class="regulation-title">
+                                <i data-lucide="scale"></i>
+                                <div>
+                                    <h3>ACUERDO 634 DE 2015</h3>
+                                    <p>Concejo de Bogotá D.C.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="regulation-body">
+                            <div class="regulation-info">
+                                <div class="info-section">
+                                    <div class="info-item">
+                                        <i data-lucide="map-pin"></i>
+                                        <span><strong>Ámbito:</strong> Distrital (Bogotá)</span>
+                                    </div>
+                                    <div class="info-item">
+                                        <i data-lucide="file-text"></i>
+                                        <div>
+                                            <strong>Objetivo:</strong>
+                                            <p>Promover la recolección, transporte y aprovechamiento del ACU</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-section">
+                                    <div class="info-item">
+                                        <i data-lucide="users"></i>
+                                        <div>
+                                            <strong>Aplica a:</strong>
+                                            <ul>
+                                                <li>• Entidades distritales, generadores y gestores dentro de Bogotá</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="obligations-section">
+                                <div class="obligations-header">
+                                    <i data-lucide="check-circle"></i>
+                                    <strong>Obligaciones destacadas:</strong>
+                                </div>
+                                <div class="obligations-grid">
+                                    <div class="obligation-item">• Campañas de recolección y educación ciudadana</div>
+                                    <div class="obligation-item">• Prohibición de verter ACU en alcantarillas</div>
+                                    <div class="obligation-item">• Recolección solo con empresas inscritas en la Secretaria Distrital de Ambiente</div>
+                                    <div class="obligation-item">• Incentivos y alianzas público-privadas</div>
+                                </div>
+                            </div>
+
+                            <div class="download-section">
+                                <a href="https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=64353&dt=S" 
+                                   target="_blank" class="btn btn-primary">
+                                    <i data-lucide="download"></i>
+                                    Descargar Norma Completa
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Comparativo Normativo</h2>
+                </div>
+
+                <div class="comparison-table card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th>Resolución 0316 de 2018</th>
+                                <th>Acuerdo 634 de 2015</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ámbito</strong></td>
+                                <td>Nacional</td>
+                                <td>Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Foco</strong></td>
+                                <td>Gestión integral del ACU</td>
+                                <td>Promoción y prevención</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Obliga a</strong></td>
+                                <td>Productores, distribuidores, Generadores, gestores</td>
+                                <td>Entes distritales, generadores y gestores</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Prohíbe</strong></td>
+                                <td>Vertimiento y entrega a terceros no autorizados</td>
+                                <td>Disposición en alcantarillado y no inscripción</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Control</strong></td>
+                                <td>Autoridades ambientales (CAR)</td>
+                                <td>Secretaría Distrital de Ambiente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fomenta</strong></td>
+                                <td>Aprovechamiento como biocombustible</td>
+                                <td>Alianzas y campañas de sensibilización</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿Cómo cumplimos desde GRASASBIO S.A.S.?</h2>
+                    <p>Estamos comprometidos con el cumplimiento normativo y trabajamos bajo los más altos estándares legales.</p>
+                </div>
+
+                <div class="compliance-content">
+                    <div class="compliance-list">
+                        <ul>
+                            <li>✓ Contamos con personal capacitado y vehículos autorizados</li>
+                            <li>✓ Estamos inscritos ante la Secretaría Distrital de Ambiente y diferentes Corporaciones Autónomas Regionales</li>
+                            <li>✓ Emitimos certificados digitales de recolección, transporte y aprovechamiento final</li>
+                            <li>✓ Garantizamos la trazabilidad del residuo desde su origen hasta su aprovechamiento</li>
+                            <li>✓ Apoyamos a nuestros aliados en el cumplimiento legal y documental</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="authorities-card card">
+                        <div class="authorities-header">
+                            <i data-lucide="building"></i>
+                            <h3>Autoridades Ambientales</h3>
+                        </div>
+                        <p>Estamos registrados ante las siguientes entidades:</p>
+                        <div class="authorities-list">
+                            <div class="authority-item"><i data-lucide="shield"></i> SDA - Secretaría Distrital de Ambiente</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CAR - Corporación Autónoma Regional de Cundinamarca</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CORPOAMAZONIA - Corporación para el Desarrollo Sostenible del Sur de la Amazonia</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CORPOMOJANA - Corporación para el Desarrollo Sostenible de la Mojana y el San Jorge</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> DAGM - Departamento Administrativo de Gestión del Medio Ambiente de Santiago de Cali</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CAM - Corporación Autónoma Regional del Alto Magdalena</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CORANTIOQUIA - Corporación Autónoma Regional del Centro de Antioquia</div>
+                            <div class="authority-item"><i data-lucide="shield"></i> CORPOBOYACA - Corporación Autónoma Regional de Boyacá</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Cumple con la ley. Protege el agua. Confía en GRASASBIO.</h2>
+                    <p>
+                        Te ayudamos a cumplir con toda la normatividad vigente y a mantener 
+                        tu documentación al día para evitar sanciones.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Solicito asesoría normativa para cumplimiento ACU')">
+                            Solicita asesoría normativa
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Quiero descargar las normas vigentes')">
+                            <i data-lucide="file-text"></i>
+                            Descargar Normas
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

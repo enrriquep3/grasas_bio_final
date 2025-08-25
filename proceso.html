@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo lo Hacemos? - GrasasBio S.A.S.</title>
+    <meta name="description" content="Conoce el proceso completo de gestión responsable del Aceite de Cocina Usado (ACU) de GrasasBio, desde la recolección hasta su transformación en biocombustible certificado.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link active">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link active">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-alt">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title font-monaco">¿CÓMO LO HACEMOS?</h1>
+                    <p class="hero-subtitle">
+                        Conoce nuestro proceso completo de gestión responsable del Aceite de Cocina Usado (ACU),
+                        desde la recolección hasta su transformación en biocombustible certificado.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACU Definition -->
+        <section class="section">
+            <div class="container">
+                <div class="card text-center max-width-800">
+                    <h2>ACEITE VEGETAL USADO (ACU)</h2>
+                    <p>
+                        El Aceite de Cocina Usado (ACU) es un residuo generado tras la fritura de alimentos. 
+                        Al ser expuesto a temperaturas mayores a 190°C, sufre alteraciones físicas y químicas, 
+                        lo que lo convierte en un desecho potencialmente contaminante.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Steps -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿CÓMO RECICLAMOS EL ACEITE?</h2>
+                    <p>Nuestro proceso certificado garantiza la trazabilidad completa y el aprovechamiento responsable del ACU.</p>
+                </div>
+                
+                <div class="process-flow">
+                    <div class="process-item card fade-in">
+                        <div class="process-icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>Recolección del ACU</h3>
+                            <p>Recolección en puntos generadores con vehículos autorizados</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <i data-lucide="arrow-down"></i>
+                    </div>
+                    
+                    <div class="process-item card fade-in">
+                        <div class="process-icon">
+                            <i data-lucide="factory"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>Transporte Seguro</h3>
+                            <p>Transporte especializado hasta nuestra planta de procesamiento</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <i data-lucide="arrow-down"></i>
+                    </div>
+                    
+                    <div class="process-item card fade-in">
+                        <div class="process-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>Pretratamiento</h3>
+                            <p>Proceso para retirar humedad e impurezas del aceite usado</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <i data-lucide="arrow-down"></i>
+                    </div>
+                    
+                    <div class="process-item card fade-in">
+                        <div class="process-icon">
+                            <i data-lucide="fuel"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>Transformación</h3>
+                            <p>Conversión en materias primas para biocombustible certificado</p>
+                        </div>
+                    </div>
+                    <div class="process-arrow">
+                        <i data-lucide="arrow-down"></i>
+                    </div>
+                    
+                    <div class="process-item card fade-in">
+                        <div class="process-icon">
+                            <i data-lucide="file-check"></i>
+                        </div>
+                        <div class="process-content">
+                            <h3>Certificación</h3>
+                            <p>Emisión de certificados digitales y trazabilidad completa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informal Collectors Warning -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center warning-header">
+                    <div class="warning-icon">
+                        <i data-lucide="alert-triangle"></i>
+                    </div>
+                    <h2>No entregues tu aceite a recolectores informales</h2>
+                    <p>
+                        A pesar de que parezca una solución rápida, entregar tu Aceite de Cocina Usado (ACU) 
+                        a recolectores no autorizados puede tener graves consecuencias para la salud y el ambiente.
+                    </p>
+                </div>
+
+                <div class="risks-grid">
+                    <div class="risk-card card">
+                        <div class="risk-icon">
+                            <i data-lucide="x"></i>
+                        </div>
+                        <div class="risk-content">
+                            <h3>Reenvasado Ilegal</h3>
+                            <p>Puede ser vendido como aceite 'nuevo', poniendo en riesgo la salud pública</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-card card">
+                        <div class="risk-icon">
+                            <i data-lucide="x"></i>
+                        </div>
+                        <div class="risk-content">
+                            <h3>Fabricación de Jabones sin Control</h3>
+                            <p>El uso no regulado del ACU puede generar productos contaminantes o inseguros</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-card card">
+                        <div class="risk-icon">
+                            <i data-lucide="x"></i>
+                        </div>
+                        <div class="risk-content">
+                            <h3>Alimento para Animales</h3>
+                            <p>El aceite degradado puede provocar enfermedades digestivas y metabólicas</p>
+                        </div>
+                    </div>
+
+                    <div class="risk-card card">
+                        <div class="risk-icon">
+                            <i data-lucide="x"></i>
+                        </div>
+                        <div class="risk-content">
+                            <h3>Uso No Autorizado</h3>
+                            <p>La normativa colombiana solo permite su aprovechamiento como biocombustible</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Legal Compliance -->
+                <div class="legal-card card card-primary text-center">
+                    <h3>¿Qué dice la ley?</h3>
+                    <p>
+                        Según la Resolución 0316 de 2018, el único destino permitido para el ACU en Colombia 
+                        es la producción de biocombustibles.
+                    </p>
+                    <p>
+                        Solo los gestores autorizados, como GRASASBIO S.A.S., pueden recolectarlo y 
+                        garantizar trazabilidad y disposición legal.
+                    </p>
+                    <div class="certified-badge">
+                        <i data-lucide="check-circle"></i>
+                        <span>BIOCOMBUSTIBLE CERTIFICADO</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¡Evita riesgos y contribuye al cuidado del medio ambiente!</h2>
+                    <p>
+                        Entrega tu ACU a gestores autorizados y solicita tu certificado 
+                        de recolección y aprovechamiento final.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Quiero entregar mi aceite correctamente')">
+                            Quiero entregar mi aceite correctamente
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Solicito certificado de recolección')">
+                            Solicita tu certificado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

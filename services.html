@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - GrasasBio S.A.S.</title>
+    <meta name="description" content="Servicios integrales de GrasasBio para la gestión responsable de aceites de cocina usados. Recolección especializada, procesamiento y certificación.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link active">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link active">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-alt">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Nuestros Servicios</h1>
+                    <p class="hero-subtitle">
+                        Ofrecemos soluciones integrales para la gestión responsable de aceites de cocina usados, 
+                        adaptándonos a las necesidades específicas de cada cliente con los más altos estándares de calidad.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services -->
+        <section class="section">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Recolección Especializada</h3>
+                            <p>Servicio de recolección programada con vehículos especializados y personal capacitado para el manejo seguro de aceites usados.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Programación flexible de recolecciones</li>
+                                <li><i data-lucide="check-circle"></i> Vehículos especializados y certificados</li>
+                                <li><i data-lucide="check-circle"></i> Personal técnico capacitado</li>
+                                <li><i data-lucide="check-circle"></i> Contenedores apropiados sin costo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="recycle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Procesamiento y Valorización</h3>
+                            <p>Transformamos aceites usados en productos de valor agregado mediante procesos tecnológicos avanzados y eco-amigables.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Procesos de purificación avanzados</li>
+                                <li><i data-lucide="check-circle"></i> Conversión en biocombustibles</li>
+                                <li><i data-lucide="check-circle"></i> Productos para industria química</li>
+                                <li><i data-lucide="check-circle"></i> Máximo aprovechamiento del recurso</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Gestión Ambiental</h3>
+                            <p>Garantizamos el cumplimiento de toda la normativa ambiental vigente con procesos certificados y trazables.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Cumplimiento normativo 100%</li>
+                                <li><i data-lucide="check-circle"></i> Certificaciones ambientales</li>
+                                <li><i data-lucide="check-circle"></i> Trazabilidad completa del proceso</li>
+                                <li><i data-lucide="check-circle"></i> Reportes de impacto ambiental</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="file-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Certificación y Documentación</h3>
+                            <p>Proveemos toda la documentación necesaria para el cumplimiento legal y la certificación de procesos.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Certificados de disposición final</li>
+                                <li><i data-lucide="check-circle"></i> Manifiestos de transporte</li>
+                                <li><i data-lucide="check-circle"></i> Reportes de gestión</li>
+                                <li><i data-lucide="check-circle"></i> Documentación legal completa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="book-open"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Capacitación y Asesoría</h3>
+                            <p>Programas de capacitación para el personal de nuestros clientes en manejo adecuado de aceites usados.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Talleres de capacitación</li>
+                                <li><i data-lucide="check-circle"></i> Manuales de buenas prácticas</li>
+                                <li><i data-lucide="check-circle"></i> Asesoría técnica especializada</li>
+                                <li><i data-lucide="check-circle"></i> Programas de mejora continua</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card card fade-in">
+                        <div class="service-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Consultoría Ambiental</h3>
+                            <p>Servicios de consultoría para implementar programas de gestión ambiental integral en su empresa.</p>
+                            <ul class="service-features">
+                                <li><i data-lucide="check-circle"></i> Diagnóstico ambiental</li>
+                                <li><i data-lucide="check-circle"></i> Diseño de programas de gestión</li>
+                                <li><i data-lucide="check-circle"></i> Implementación de sistemas</li>
+                                <li><i data-lucide="check-circle"></i> Seguimiento y monitoreo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="process-grid">
+                    <div class="process-content">
+                        <h2>Nuestro Proceso</h2>
+                        <p>Seguimos un proceso riguroso y certificado que garantiza la máxima eficiencia y el cumplimiento de todos los estándares ambientales y de calidad.</p>
+                        
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Evaluación Inicial</h4>
+                                    <p>Análisis de necesidades y diseño de programa personalizado.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Implementación</h4>
+                                    <p>Instalación de sistemas y capacitación del personal.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Recolección</h4>
+                                    <p>Servicio programado con vehículos especializados.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Procesamiento</h4>
+                                    <p>Transformación en productos de valor agregado.</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Certificación</h4>
+                                    <p>Entrega de documentación y certificados.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-image">
+                        <img src="src/assets/recycling-process.jpg" alt="Proceso de gestión de aceites">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="section section-primary">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Beneficios de Nuestros Servicios</h2>
+                    <p>Al elegir GrasasBio, su empresa obtiene múltiples beneficios que van más allá del cumplimiento normativo.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Cumplimiento total de la normativa ambiental</div>
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Reducción del impacto ambiental</div>
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Certificación de procesos</div>
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Ahorro en costos de gestión</div>
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Mejora de imagen corporativa</div>
+                    <div class="benefit-item"><i data-lucide="check-circle"></i> Contribución a la economía circular</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industries Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Sectores que Atendemos</h2>
+                    <p>Brindamos nuestros servicios a una amplia gama de industrias y sectores comerciales.</p>
+                </div>
+                <div class="industries-grid">
+                    <div class="industry-item"><i data-lucide="users"></i><span>Restaurantes</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Hoteles</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Centros Comerciales</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Industria Alimentaria</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Catering y Eventos</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Panaderías</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Frituras Industriales</span></div>
+                    <div class="industry-item"><i data-lucide="users"></i><span>Instituciones Educativas</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿Necesitas Nuestros Servicios?</h2>
+                    <p>Contáctanos para una evaluación gratuita y descubre cómo podemos ayudarte a gestionar tus aceites usados de manera responsable y eficiente.</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Solicito cotización gratuita para servicios de ACU')">
+                            <i data-lucide="arrow-right"></i>
+                            Solicita tu Cotización Gratuita
+                        </button>
+                        <button class="btn btn-outline" onclick="makePhoneCall('6017618796')">
+                            Llámanos: (601) 7618796
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sostenibilidad - GrasasBio S.A.S.</title>
+    <meta name="description" content="Nuestra operación está avalada por certificaciones internacionales ISCC. Conoce nuestro compromiso con la sostenibilidad y los estándares ambientales.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link active">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link active">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-alt">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">SOSTENIBILIDAD</h1>
+                    <h2 class="hero-subtitle">Nuestra operación, avalada por certificaciones internacionales</h2>
+                    <p class="hero-description">
+                        En GRASASBIO S.A.S. nos regimos bajo estándares internacionales de sostenibilidad, 
+                        calidad y trazabilidad. Actualmente, operamos bajo el esquema voluntario de certificación ISCC 
+                        (International Sustainability and Carbon Certification).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ISCC Certification -->
+        <section class="section">
+            <div class="container">
+                <div class="iscc-content">
+                    <div class="iscc-info">
+                        <div class="iscc-logo-section">
+                            <img src="src/assets/iscc-logo.png" alt="ISCC Certification" class="iscc-logo-large">
+                        </div>
+                        <div class="iscc-details">
+                            <h2>Certificación ISCC</h2>
+                            <p>Esta certificación nos reconoce por:</p>
+                            <ul class="certification-benefits">
+                                <li><i data-lucide="check-circle"></i> Aplicar prácticas sostenibles en toda la cadena de valor del ACU</li>
+                                <li><i data-lucide="check-circle"></i> Medir y reducir nuestra huella de carbono</li>
+                                <li><i data-lucide="check-circle"></i> Trazabilidad en procesos de recolección, transporte y valorización</li>
+                                <li><i data-lucide="check-circle"></i> Cumplimiento con normativas ambientales europeas y globales</li>
+                                <li><i data-lucide="check-circle"></i> Contribución a los Objetivos de Desarrollo Sostenible (ODS)</li>
+                            </ul>
+                            <div class="certification-download">
+                                <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre certificación ISCC')">
+                                    <i data-lucide="download"></i>
+                                    Descarga nuestra certificación ISCC
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is ISCC -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="iscc-explanation">
+                    <div class="explanation-content">
+                        <h2>¿Qué es ISCC?</h2>
+                        <p>
+                            ISCC es un sistema internacional de certificación reconocido por la Unión Europea 
+                            que garantiza el cumplimiento de criterios ambientales, sociales y económicos en la 
+                            producción y aprovechamiento sostenible de biomasa y residuos.
+                        </p>
+                        <div class="iscc-standards">
+                            <h3>Estándares que cumplimos:</h3>
+                            <div class="standards-grid">
+                                <div class="standard-item">
+                                    <i data-lucide="leaf"></i>
+                                    <div>
+                                        <h4>Criterios Ambientales</h4>
+                                        <p>Protección de ecosistemas y biodiversidad</p>
+                                    </div>
+                                </div>
+                                <div class="standard-item">
+                                    <i data-lucide="users"></i>
+                                    <div>
+                                        <h4>Criterios Sociales</h4>
+                                        <p>Respeto por derechos humanos y laborales</p>
+                                    </div>
+                                </div>
+                                <div class="standard-item">
+                                    <i data-lucide="trending-up"></i>
+                                    <div>
+                                        <h4>Criterios Económicos</h4>
+                                        <p>Viabilidad económica sostenible</p>
+                                    </div>
+                                </div>
+                                <div class="standard-item">
+                                    <i data-lucide="shield"></i>
+                                    <div>
+                                        <h4>Trazabilidad</h4>
+                                        <p>Seguimiento completo de la cadena de suministro</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="iscc-link">
+                            <p>Más información en: <a href="https://www.iscc-system.org" target="_blank" rel="noopener noreferrer">https://www.iscc-system.org</a></p>
+                        </div>
+                    </div>
+                    <div class="explanation-visual">
+                        <div class="certification-badge">
+                            <img src="src/assets/iscc-logo.png" alt="ISCC Official Logo" class="badge-logo">
+                            <div class="badge-content">
+                                <h3>Certificación Internacional</h3>
+                                <p>Reconocida por la Unión Europea</p>
+                                <div class="badge-year">2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Impact -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Nuestro Impacto en Sostenibilidad</h2>
+                    <p>Medimos y reportamos nuestro compromiso con el medio ambiente y la sociedad</p>
+                </div>
+                
+                <div class="impact-metrics">
+                    <div class="metric-card card fade-in">
+                        <div class="metric-icon">
+                            <i data-lucide="recycle"></i>
+                        </div>
+                        <div class="metric-number stat-number" data-target="10435689">0</div>
+                        <div class="metric-label">KG de ACU procesados</div>
+                        <div class="metric-description">Residuos transformados en productos útiles</div>
+                    </div>
+
+                    <div class="metric-card card fade-in">
+                        <div class="metric-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="metric-number stat-number" data-target="417427560">0</div>
+                        <div class="metric-label">Litros de agua protegidos</div>
+                        <div class="metric-description">Agua que no fue contaminada por ACU</div>
+                    </div>
+
+                    <div class="metric-card card fade-in">
+                        <div class="metric-icon">
+                            <i data-lucide="leaf"></i>
+                        </div>
+                        <div class="metric-number stat-number" data-target="3651">0</div>
+                        <div class="metric-label">Toneladas CO₂ evitadas</div>
+                        <div class="metric-description">Reducción de emisiones de gases efecto invernadero</div>
+                    </div>
+
+                    <div class="metric-card card fade-in">
+                        <div class="metric-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="metric-number stat-number" data-target="7900">0</div>
+                        <div class="metric-label">Clientes activos</div>
+                        <div class="metric-description">Empresas comprometidas con la sostenibilidad</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ODS Contribution -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Contribución a los Objetivos de Desarrollo Sostenible (ODS)</h2>
+                    <p>Nuestras actividades contribuyen directamente al cumplimiento de varios ODS de la ONU</p>
+                </div>
+                
+                <div class="ods-grid">
+                    <div class="ods-item card">
+                        <div class="ods-number">6</div>
+                        <h3>Agua Limpia y Saneamiento</h3>
+                        <p>Evitamos la contaminación de fuentes hídricas mediante la correcta gestión del ACU</p>
+                    </div>
+
+                    <div class="ods-item card">
+                        <div class="ods-number">7</div>
+                        <h3>Energía Asequible y No Contaminante</h3>
+                        <p>Transformamos residuos en biocombustibles, contribuyendo a la matriz energética sostenible</p>
+                    </div>
+
+                    <div class="ods-item card">
+                        <div class="ods-number">12</div>
+                        <h3>Producción y Consumo Responsables</h3>
+                        <p>Promovemos la economía circular y el aprovechamiento responsable de residuos</p>
+                    </div>
+
+                    <div class="ods-item card">
+                        <div class="ods-number">13</div>
+                        <h3>Acción por el Clima</h3>
+                        <p>Reducimos emisiones de gases de efecto invernadero a través de nuestros procesos</p>
+                    </div>
+
+                    <div class="ods-item card">
+                        <div class="ods-number">14</div>
+                        <h3>Vida Submarina</h3>
+                        <p>Protegemos los ecosistemas acuáticos evitando la contaminación por ACU</p>
+                    </div>
+
+                    <div class="ods-item card">
+                        <div class="ods-number">15</div>
+                        <h3>Vida de Ecosistemas Terrestres</h3>
+                        <p>Preservamos suelos y ecosistemas terrestres mediante prácticas ambientalmente responsables</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Certification -->
+        <section class="section">
+            <div class="container">
+                <div class="client-certification">
+                    <div class="certification-content">
+                        <h2>Certificación para Nuestros Clientes</h2>
+                        <p>
+                            Si ya estás vinculado con nosotros, puedes solicitar tu certificado ISCC 
+                            que avala tu compromiso con la sostenibilidad y la gestión responsable de residuos.
+                        </p>
+                        <div class="certification-benefits-client">
+                            <h3>Beneficios del certificado ISCC:</h3>
+                            <ul>
+                                <li><i data-lucide="award"></i> Reconocimiento internacional de sostenibilidad</li>
+                                <li><i data-lucide="trending-up"></i> Mejora de tu reputación corporativa</li>
+                                <li><i data-lucide="file-check"></i> Cumplimiento de estándares ambientales</li>
+                                <li><i data-lucide="globe"></i> Acceso a mercados internacionales</li>
+                                <li><i data-lucide="users"></i> Satisfacción de stakeholders y consumidores conscientes</li>
+                            </ul>
+                        </div>
+                        <div class="certification-cta">
+                            <button class="btn btn-primary" onclick="openWhatsApp('Solicito mi certificado ISCC como cliente de GrasasBio')">
+                                <i data-lucide="award"></i>
+                                Solicita tu Certificado ISCC
+                            </button>
+                        </div>
+                    </div>
+                    <div class="certification-visual">
+                        <div class="certificate-mockup">
+                            <div class="certificate-header">
+                                <img src="src/assets/iscc-logo.png" alt="ISCC" class="cert-logo">
+                                <h4>Certificado de Sostenibilidad</h4>
+                            </div>
+                            <div class="certificate-body">
+                                <p>Se certifica que</p>
+                                <h3>[Tu Empresa]</h3>
+                                <p>Cumple con los estándares internacionales de sostenibilidad ISCC a través de su gestión responsable de aceites de cocina usados en alianza con GrasasBio S.A.S.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Únete a la Sostenibilidad Certificada</h2>
+                    <p>
+                        Forma parte de la red de empresas comprometidas con la sostenibilidad. 
+                        Obtén tu certificación ISCC y demuestra tu compromiso ambiental.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Quiero obtener certificación ISCC para mi empresa')">
+                            <i data-lucide="award"></i>
+                            Obtener Certificación ISCC
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Solicito información sobre sostenibilidad')">
+                            Conoce Más sobre Sostenibilidad
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

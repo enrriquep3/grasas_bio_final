@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRABITEC - Portal de Clientes - GrasasBio S.A.S.</title>
+    <meta name="description" content="GRABITEC es tu plataforma digital para gestionar todos los servicios de recolección y aprovechamiento de ACU con GrasasBio S.A.S.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link active">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link active">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-primary">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title font-monaco">GRABITEC</h1>
+                    <h2 class="hero-subtitle">Portal de Clientes</h2>
+                    <p class="hero-description">
+                        Tu plataforma digital para gestionar todos los servicios de recolección y 
+                        aprovechamiento de ACU con GrasasBio S.A.S.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Solicito acceso al portal GRABITEC')">
+                            <i data-lucide="lock"></i>
+                            Acceder al Portal
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Quiero solicitar acceso a GRABITEC')">
+                            Solicitar Acceso
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Funcionalidades del Portal</h2>
+                    <p>GRABITEC te proporciona todas las herramientas necesarias para gestionar tus servicios de manera eficiente y transparente.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Gestión de Clientes</h3>
+                            <p>Administra tu información de contacto, ubicaciones y detalles de servicio</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Programación de Recolecciones</h3>
+                            <p>Agenda y reprograma tus servicios de recolección de forma fácil</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="file-text"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Certificados Digitales</h3>
+                            <p>Accede y descarga todos tus certificados de recolección y aprovechamiento</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Reportes y Estadísticas</h3>
+                            <p>Visualiza tu historial de recolecciones y impacto ambiental</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Seguimiento de Rutas</h3>
+                            <p>Monitorea en tiempo real el estado de tus recolecciones</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card card fade-in">
+                        <div class="feature-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Cumplimiento Normativo</h3>
+                            <p>Mantente al día con toda la documentación legal requerida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="benefits-content">
+                    <div class="benefits-info">
+                        <h2>Beneficios de usar GRABITEC</h2>
+                        <p>Nuestra plataforma está diseñada para simplificar la gestión de tus servicios y garantizar el cumplimiento normativo completo.</p>
+                        <ul class="benefits-list">
+                            <li>✓ Acceso 24/7 desde cualquier dispositivo</li>
+                            <li>✓ Certificados digitales con trazabilidad completa</li>
+                            <li>✓ Notificaciones automáticas de servicios</li>
+                            <li>✓ Historial completo de todas las operaciones</li>
+                            <li>✓ Soporte técnico especializado</li>
+                            <li>✓ Cumplimiento automático de normativas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dashboard-preview card">
+                        <div class="dashboard-header">
+                            <div class="dashboard-title">
+                                <i data-lucide="settings"></i>
+                                <h3>Panel de Control</h3>
+                            </div>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i data-lucide="clock"></i>
+                                </div>
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">Disponibilidad</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i data-lucide="file-check"></i>
+                                </div>
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Trazabilidad</div>
+                            </div>
+                        </div>
+                        <div class="dashboard-info">
+                            <div class="info-row">
+                                <span>Certificados Emitidos</span>
+                                <span>1.247</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Recolecciones Activas</span>
+                                <span>89</span>
+                            </div>
+                            <div class="info-row">
+                                <span>Última Actualización</span>
+                                <span>Hace 2 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Section -->
+        <section class="section">
+            <div class="container">
+                <div class="access-section card card-primary">
+                    <div class="text-center">
+                        <h3>¿Cómo acceder a GRABITEC?</h3>
+                        <p>
+                            Si ya eres cliente de GrasasBio S.A.S., puedes solicitar acceso a tu portal personalizado. 
+                            Si aún no eres cliente, contáctanos para conocer nuestros servicios.
+                        </p>
+                        <div class="access-options">
+                            <div class="access-option">
+                                <div class="option-content">
+                                    <h4>Clientes Existentes</h4>
+                                    <p>Solicita tus credenciales de acceso</p>
+                                    <button class="btn btn-secondary" onclick="openWhatsApp('Soy cliente existente y solicito acceso a GRABITEC')">
+                                        Solicitar Acceso
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="access-option">
+                                <div class="option-content">
+                                    <h4>Nuevos Clientes</h4>
+                                    <p>Conoce nuestros servicios primero</p>
+                                    <button class="btn btn-outline" onclick="openWhatsApp('Soy nuevo cliente, quiero conocer los servicios')">
+                                        Contactar Ventas
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Soporte Técnico</h2>
+                    <p>
+                        Nuestro equipo técnico está disponible para ayudarte con cualquier 
+                        duda o problema técnico que puedas tener con la plataforma.
+                    </p>
+                    <div class="support-actions">
+                        <button class="btn btn-primary" onclick="openWhatsApp('Necesito el manual de usuario de GRABITEC')">
+                            <i data-lucide="download"></i>
+                            Manual de Usuario
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Necesito soporte técnico para GRABITEC')">
+                            Contactar Soporte
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section class="section">
+            <div class="container">
+                <div class="demo-section">
+                    <div class="demo-content">
+                        <h2>¿Quieres ver GRABITEC en acción?</h2>
+                        <p>
+                            Solicita una demostración personalizada de la plataforma y descubre todas las funcionalidades 
+                            que pueden ayudar a optimizar la gestión de tus servicios de ACU.
+                        </p>
+                        <div class="demo-features">
+                            <div class="demo-feature">
+                                <i data-lucide="play-circle"></i>
+                                <span>Demo en vivo</span>
+                            </div>
+                            <div class="demo-feature">
+                                <i data-lucide="users"></i>
+                                <span>Asesoría personalizada</span>
+                            </div>
+                            <div class="demo-feature">
+                                <i data-lucide="clock"></i>
+                                <span>30 minutos</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="openWhatsApp('Solicito una demo de GRABITEC')">
+                            <i data-lucide="play-circle"></i>
+                            Solicitar Demo Gratuita
+                        </button>
+                    </div>
+                    <div class="demo-visual">
+                        <div class="demo-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-controls">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="mockup-title">GRABITEC Portal</div>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-sidebar">
+                                    <div class="sidebar-item active">Dashboard</div>
+                                    <div class="sidebar-item">Recolecciones</div>
+                                    <div class="sidebar-item">Certificados</div>
+                                    <div class="sidebar-item">Reportes</div>
+                                </div>
+                                <div class="mockup-main">
+                                    <div class="mockup-stats">
+                                        <div class="mock-stat">
+                                            <div class="mock-number">1.247</div>
+                                            <div class="mock-label">Certificados</div>
+                                        </div>
+                                        <div class="mock-stat">
+                                            <div class="mock-number">89</div>
+                                            <div class="mock-label">Activas</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Comienza a usar GRABITEC hoy</h2>
+                    <p>
+                        Optimiza la gestión de tus servicios de ACU con nuestra plataforma digital. 
+                        Acceso inmediato para clientes existentes y evaluación gratuita para nuevos clientes.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Quiero acceder a GRABITEC')">
+                            <i data-lucide="lock"></i>
+                            Acceder al Portal
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Solicito información sobre GRABITEC')">
+                            Más Información
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

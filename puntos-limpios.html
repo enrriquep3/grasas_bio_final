@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puntos Limpios - GrasasBio S.A.S.</title>
+    <meta name="description" content="Contenedores especializados para la disposición correcta del ACU. Adquiere tu Punto Limpio con GrasasBio y contribuye al cuidado del medio ambiente.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link active">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link active">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-primary">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title font-monaco">PUNTOS LIMPIOS</h1>
+                    <h2 class="hero-subtitle">Para Aceite de Cocina Usado</h2>
+                    <p class="hero-description">
+                        ¡Adquiere el tuyo! Contenedores especializados para la disposición correcta 
+                        del ACU en tu comunidad, empresa o establecimiento.
+                    </p>
+                    <button class="btn btn-secondary" onclick="openWhatsApp('Solicito información sobre Puntos Limpios')">
+                        Solicita tu Punto Limpio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is Section -->
+        <section class="section">
+            <div class="container">
+                <div class="punto-limpio-definition">
+                    <div class="definition-content">
+                        <h2>¿Qué es un Punto Limpio para ACU?</h2>
+                        <p>
+                            Es un contenedor especializado donde los ciudadanos, conjuntos residenciales, 
+                            restaurantes, colegios y empresas pueden disponer correctamente su aceite de cocina usado (ACU).
+                        </p>
+                        <p>
+                            En GRASASBIO S.A.S., diseñamos y suministramos puntos limpios a medida, ideales para 
+                            facilitar la recolección responsable y evitar la contaminación de fuentes hídricas.
+                        </p>
+                    </div>
+                    
+                    <div class="definition-visual card">
+                        <div class="visual-header text-center">
+                            <div class="visual-icon">
+                                <i data-lucide="droplets"></i>
+                            </div>
+                            <h3>Contenedor Especializado</h3>
+                            <p>Diseñado específicamente para la recolección segura y eficiente del aceite de cocina usado</p>
+                        </div>
+                        <div class="capacity-info">
+                            <div class="capacity-label">Capacidades disponibles</div>
+                            <div class="capacity-values">50L - 100L - 150L - 200L</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Ventajas de contar con un Punto Limpio</h2>
+                    <p>Múltiples beneficios para tu comunidad, empresa y el medio ambiente.</p>
+                </div>
+                
+                <div class="advantages-grid">
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Disposición Adecuada</h3>
+                            <p>Disposición adecuada del aceite sin riesgo de vertimientos</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Reducción de Riesgos</h3>
+                            <p>Reducción de olores, plagas y obstrucciones en tuberías</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Cumplimiento Normativo</h3>
+                            <p>Cumplimiento de la normativa ambiental vigente</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Conciencia Ambiental</h3>
+                            <p>Mayor conciencia ambiental en tu comunidad o empresa</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="recycle"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Recolección Programada</h3>
+                            <p>Recolección programada por parte de nuestro equipo autorizado</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage-card card fade-in">
+                        <div class="advantage-icon">
+                            <i data-lucide="check-circle"></i>
+                        </div>
+                        <div class="advantage-content">
+                            <h3>Objetivos ODS</h3>
+                            <p>Aporte directo a los Objetivos de Desarrollo Sostenible (ODS)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿Dónde puedes instalar un Punto Limpio?</h2>
+                    <p>Nuestros puntos limpios se adaptan a diferentes tipos de establecimientos y comunidades.</p>
+                </div>
+                
+                <div class="locations-grid">
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="building"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Conjuntos Residenciales</h3>
+                            <p>Soluciones para comunidades y edificaciones</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="store"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Restaurantes</h3>
+                            <p>Puntos especializados para establecimientos gastronómicos</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Centros Educativos</h3>
+                            <p>Implementación en colegios y universidades</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="building"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Empresas Alimenticias</h3>
+                            <p>Soluciones industriales para el sector alimentario</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="shopping-cart"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Supermercados</h3>
+                            <p>Puntos de recolección en tiendas y supermercados</p>
+                        </div>
+                    </div>
+
+                    <div class="location-card card">
+                        <div class="location-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3>Espacios Públicos</h3>
+                            <p>Alcaldías, parques y bibliotecas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="community-partner card card-success text-center">
+                    <p>
+                        <strong>También puedes convertirte en aliado comunitario y recibir incentivos por las entregas acumuladas.</strong>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Includes -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="service-includes">
+                    <div class="includes-content">
+                        <h2>¿Qué incluye el servicio?</h2>
+                        <p>
+                            Ofrecemos una solución completa que incluye todo lo necesario para una 
+                            gestión exitosa del punto limpio.
+                        </p>
+                        <ul class="includes-list">
+                            <li>✓ Contenedor rotulado y resistente (capacidades desde 50 hasta 200 L)</li>
+                            <li>✓ Instrucciones visibles para disposición correcta</li>
+                            <li>✓ Acompañamiento técnico y capacitación al punto receptor</li>
+                            <li>✓ Recogida programada y certificación digital del residuo</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="service-visual card">
+                        <div class="visual-header text-center">
+                            <h3>Servicio Integral</h3>
+                        </div>
+                        <div class="visual-content text-center">
+                            <div class="service-icon">
+                                <i data-lucide="recycle"></i>
+                            </div>
+                            <h4>Nosotros nos encargamos de todo</h4>
+                            <p>Instalación, operación y trazabilidad completa del proceso</p>
+                        </div>
+                        <div class="service-stats">
+                            <div class="stat-box">
+                                <div class="stat-value">100%</div>
+                                <div class="stat-label">Trazabilidad</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">24/7</div>
+                                <div class="stat-label">Soporte</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Galería de Puntos Instalados</h2>
+                    <p>Conoce algunos de los puntos limpios que hemos instalado exitosamente</p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item card">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Punto Limpio en Conjunto Residencial</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item card">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Instalación en Restaurante</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item card">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Centro Educativo</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item card">
+                        <div class="gallery-placeholder">
+                            <i data-lucide="image"></i>
+                            <p>Supermercado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¡Adquiere tu Punto Limpio hoy!</h2>
+                    <p>
+                        Ayuda a proteger el agua y el medio ambiente desde tu empresa, hogar o comunidad. 
+                        Nosotros te lo instalamos, lo operamos y te garantizamos trazabilidad completa.
+                    </p>
+                    <button class="btn btn-secondary" onclick="openWhatsApp('Quiero adquirir un Punto Limpio para mi establecimiento')">
+                        Solicita tu Punto Limpio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div class="contact-section card">
+                    <div class="contact-header text-center">
+                        <h3>¿Tienes dudas?</h3>
+                        <p>Contáctanos para resolver cualquier inquietud sobre nuestros puntos limpios</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Teléfonos</h4>
+                                <p>300 599 5277</p>
+                                <p>320 935 4466</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>comercial@grasasbio.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/573005995277" target="_blank" rel="noopener noreferrer">
+                                    300 599 5277
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta text-center">
+                        <button class="btn btn-success" onclick="openWhatsApp('Tengo dudas sobre los Puntos Limpios')">
+                            <i data-lucide="message-circle"></i>
+                            Contactar por WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

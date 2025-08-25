@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GrasasBio | Solicita tu recolección de aceites usados</title>
+    <meta name="description" content="Contáctanos para solicitar la recolección de aceites de cocina usados. Servicio profesional en toda Colombia. Teléfono: (601) 7618796">
+    <link rel="canonical" href="https://grasasbio.com/contact.html">
+    
+    <!-- Monaco Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Include Header -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:6017618796" class="contact-link">
+                    <i data-lucide="phone"></i>
+                    (601) 7618796
+                </a>
+                <a href="mailto:comercial@grasasbio.com" class="contact-link">
+                    <i data-lucide="mail"></i>
+                    comercial@grasasbio.com
+                </a>
+                <a href="https://wa.me/573005995277" target="_blank" rel="noopener noreferrer" class="contact-link whatsapp">
+                    <i data-lucide="message-circle"></i>
+                    WhatsApp: 300 599 5277
+                </a>
+            </div>
+            <div class="certifications">
+                <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="iscc-logo">
+                <div class="cert-text">
+                    Líderes en gestión responsable de aceites usados
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="logo-img">
+                    <div class="logo-text">
+                        <span class="company-name">GrasasBio</span>
+                        <span class="tagline">Recolección de Aceites Vegetales Usados</span>
+                    </div>
+                </a>
+
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="contact.html" class="nav-link active">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                    <button class="btn btn-primary">Solicita tu Recolección</button>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <nav class="mobile-nav-content">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="contact.html" class="nav-link active">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                    <button class="btn btn-primary">Solicita tu Recolección</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="page-title">Contacto</h1>
+                    <p class="page-subtitle">Estamos aquí para ayudarte. Contáctanos y nos pondremos en contacto contigo lo más pronto posible.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Collection Request Form -->
+                    <div class="form-container">
+                        <h2>Solicita tu Recolección de ACU</h2>
+                        <p class="form-description">
+                            Completa este formulario y programaremos la recolección de tu aceite de cocina usado
+                        </p>
+                        
+                        <form class="collection-form" id="collectionForm">
+                            <div class="form-group">
+                                <label for="business-name">Nombre o Razón Social *</label>
+                                <input type="text" id="business-name" name="businessName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Dirección del Establecimiento *</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="city">Ciudad *</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="client-type">Tipo de Cliente *</label>
+                                <select id="client-type" name="clientType" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="nuevo">Nuevo Cliente</option>
+                                    <option value="antiguo">Cliente Antiguo</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-name">Nombres y Apellidos del Solicitante *</label>
+                                <input type="text" id="contact-name" name="contactName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Teléfono de Contacto</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="observations">Observaciones</label>
+                                <textarea id="observations" name="observations" rows="4" placeholder="Información adicional sobre la recolección..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg btn-full" data-original-text="Enviar Solicitud">
+                                Enviar Solicitud
+                                <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                        
+                        <div class="form-note">
+                            <i data-lucide="info"></i>
+                            <p>Una vez recibamos este formulario nos pondremos en contacto contigo para asignarte una fecha de recolección</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-container">
+                        <h3>Información de Contacto</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Teléfono</h4>
+                                    <a href="tel:6017618796">(601) 7618796</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon whatsapp">
+                                    <i data-lucide="message-circle"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>WhatsApp</h4>
+                                    <a href="https://wa.me/573005995277" target="_blank">300 599 5277</a>
+                                    <button class="btn btn-success" onclick="window.open('https://wa.me/573005995277?text=Hola, necesito información sobre los servicios de GrasasBio', '_blank')">
+                                        <i data-lucide="message-circle"></i>
+                                        Escríbenos
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Ubicación</h4>
+                                    <p>Calle 9 #32a-83<br>Bogotá, Cundinamarca<br>Colombia</p>
+                                    <button class="btn btn-outline" onclick="openGoogleMaps()">
+                                        <i data-lucide="navigation"></i>
+                                        Ver en Google Maps
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Business Hours -->
+                        <div class="business-hours">
+                            <h4>Horarios de Atención</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span>Lunes - Viernes</span>
+                                    <span>7:00 AM - 5:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Sábados</span>
+                                    <span>8:00 AM - 12:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Domingos</span>
+                                    <span>Cerrado</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2 class="section-title">Nuestra Ubicación</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.2086471399977!2d-74.08253968524682!3d4.659374596191799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b0b0b0b0b0b%3A0x0!2sCalle%209%20%2332a-83%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1234567890123"
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 0.75rem;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <div class="container">
+                <h2 class="section-title">Síguenos en Redes Sociales</h2>
+                <p class="section-subtitle">
+                    Mantente actualizado con nuestras últimas noticias y consejos sobre sostenibilidad
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank" class="social-card">
+                        <div class="social-icon facebook">
+                            <i data-lucide="facebook"></i>
+                        </div>
+                        <div class="social-info">
+                            <h4>Facebook</h4>
+                            <p>Síguenos para tips y noticias</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank" class="social-card">
+                        <div class="social-icon instagram">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <div class="social-info">
+                            <h4>Instagram</h4>
+                            <p>Contenido visual y casos de éxito</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://x.com/grasasbio" target="_blank" class="social-card">
+                        <div class="social-icon twitter">
+                            <i data-lucide="twitter"></i>
+                        </div>
+                        <div class="social-info">
+                            <h4>Twitter / X</h4>
+                            <p>Actualizaciones en tiempo real</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/grasas-bio-a437b4194" target="_blank" class="social-card">
+                        <div class="social-icon linkedin">
+                            <i data-lucide="linkedin"></i>
+                        </div>
+                        <div class="social-info">
+                            <h4>LinkedIn</h4>
+                            <p>Contenido profesional y networking</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="footer-logo-img">
+                        <div class="footer-company">
+                            <h3>GrasasBio</h3>
+                            <p>S.A.S.</p>
+                        </div>
+                    </div>
+                    <div class="footer-certification">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="footer-iscc">
+                        <div class="footer-cert-text">
+                            <p>Certificación Internacional</p>
+                            <p>de Sostenibilidad y Carbono</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Líder en Colombia en la gestión responsable de aceites de cocina usados y grasas vegetales y animales. 
+                        Promovemos soluciones sostenibles para un futuro más verde.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://x.com/grasasbio" class="social-link">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="acu.html">ACU</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Nuestros Servicios</h4>
+                    <ul class="footer-services">
+                        <li>Recolección de ACU</li>
+                        <li>Procesamiento y Valorización</li>
+                        <li>Gestión Ambiental</li>
+                        <li>Capacitación</li>
+                        <li>Consultoría Ambiental</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i data-lucide="phone"></i>
+                            <a href="tel:6017618796">(601) 7618796</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                Calle 9 #32a-83 Bogotá<br>
+                                Cundinamarca, Colombia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                    <div class="footer-legal">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        /* Additional styles for Contact page */
+        .page-hero {
+            background: var(--gradient-subtle);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .page-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            font-size: 1.25rem;
+            color: var(--muted-foreground);
+            max-width: 42rem;
+            margin: 0 auto;
+        }
+        
+        .contact-form-section {
+            padding: 5rem 0;
+        }
+        
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+        }
+        
+        .form-container h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+        
+        .form-description {
+            color: var(--muted-foreground);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            font-size: 1rem;
+            background: var(--background);
+            color: var(--foreground);
+            transition: var(--transition-fast);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px hsl(var(--primary), 0.1);
+        }
+        
+        .form-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: var(--primary-light);
+            border-radius: var(--radius);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .form-note i {
+            color: var(--primary);
+            margin-top: 0.125rem;
+            flex-shrink: 0;
+        }
+        
+        .form-note p {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+        
+        .contact-info-container {
+            background: var(--muted);
+            padding: 2rem;
+            border-radius: var(--radius);
+            height: fit-content;
+        }
+        
+        .contact-info-container h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 2rem;
+        }
+        
+        .contact-methods {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .contact-method:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-icon {
+            width: 3rem;
+            height: 3rem;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-icon i {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .contact-icon.whatsapp {
+            background: hsl(120, 60%, 90%);
+        }
+        
+        .contact-icon.whatsapp i {
+            color: hsl(120, 60%, 40%);
+        }
+        
+        .contact-details h4 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-details a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .contact-details p {
+            color: var(--muted-foreground);
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-details .btn {
+            margin-top: 0.75rem;
+        }
+        
+        .btn-success {
+            background: hsl(120, 60%, 40%);
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background: hsl(120, 60%, 35%);
+        }
+        
+        .business-hours {
+            background: var(--background);
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+        
+        .business-hours h4 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 1rem;
+        }
+        
+        .hours-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+        
+        .hours-item span:first-child {
+            font-weight: 500;
+        }
+        
+        .map-section {
+            padding: 5rem 0;
+            background: var(--gradient-subtle);
+        }
+        
+        .map-container {
+            margin-top: 2rem;
+            box-shadow: var(--shadow-medium);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        
+        .social-section {
+            padding: 5rem 0;
+        }
+        
+        .social-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .social-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-smooth);
+        }
+        
+        .social-card:hover {
+            box-shadow: var(--shadow-medium);
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+        
+        .social-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .social-icon i {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: white;
+        }
+        
+        .social-icon.facebook {
+            background: #1877F2;
+        }
+        
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+        }
+        
+        .social-icon.twitter {
+            background: #1DA1F2;
+        }
+        
+        .social-icon.linkedin {
+            background: #0A66C2;
+        }
+        
+        .social-info h4 {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--foreground);
+            margin-bottom: 0.25rem;
+        }
+        
+        .social-info p {
+            color: var(--muted-foreground);
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 1023px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+        
+        @media (max-width: 639px) {
+            .social-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>

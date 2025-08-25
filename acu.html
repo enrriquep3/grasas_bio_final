@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es el ACU? - GrasasBio S.A.S.</title>
+    <meta name="description" content="Conoce todo sobre los Aceites de Cocina Usados (ACU), su impacto ambiental y cómo GrasasBio transforma este residuo en recursos valiosos.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:6017618796" class="contact-item">
+                        <i data-lucide="phone"></i>
+                        (601) 7618796
+                    </a>
+                    <a href="mailto:comercial@grasasbio.com" class="contact-item">
+                        <i data-lucide="mail"></i>
+                        comercial@grasasbio.com
+                    </a>
+                    <a href="https://wa.me/573005995277" class="contact-item whatsapp" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="top-logos">
+                    <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="top-logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="top-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                    <div class="logo-text">
+                        <h2>GrasasBio S.A.S.</h2>
+                        <p>Gestión Responsable de Aceites Usados</p>
+                    </div>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                    <a href="services.html" class="nav-link">SERVICIOS</a>
+                    <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+                    <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+                    <a href="acu.html" class="nav-link active">¿QUÉ ES EL ACU?</a>
+                    <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+                    <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+                    <a href="contact.html" class="nav-link">CONTACTO</a>
+                    <a href="grabitec.html" class="nav-link">GRABITEC</a>
+                    <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+                </nav>
+
+                <div class="cta-button">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                        Solicita tu Recolección
+                    </button>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="services.html" class="nav-link">SERVICIOS</a>
+            <a href="about.html" class="nav-link">QUIÉNES SOMOS</a>
+            <a href="proceso.html" class="nav-link">¿CÓMO LO HACEMOS?</a>
+            <a href="acu.html" class="nav-link active">¿QUÉ ES EL ACU?</a>
+            <a href="normatividad.html" class="nav-link">NORMATIVIDAD</a>
+            <a href="sostenibilidad.html" class="nav-link">SOSTENIBILIDAD</a>
+            <a href="contact.html" class="nav-link">CONTACTO</a>
+            <a href="grabitec.html" class="nav-link">GRABITEC</a>
+            <a href="puntos-limpios.html" class="nav-link">PUNTOS LIMPIOS</a>
+            <button class="btn btn-primary mobile-cta" onclick="openWhatsApp('Solicito información sobre recolección de ACU')">
+                Solicita tu Recolección
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-alt">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">
+                        Aceites de Cocina Usados
+                        <span class="text-primary">(ACU)</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Conoce todo sobre la gestión responsable de aceites de cocina usados, 
+                        su impacto ambiental y cómo GrasasBio transforma este residuo en recursos valiosos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Facts -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Datos Importantes sobre ACU</h2>
+                    <p>Conoce el impacto real de los aceites de cocina usados y por qué su gestión adecuada es fundamental.</p>
+                </div>
+                <div class="acu-facts">
+                    <div class="fact-card card text-center fade-in">
+                        <div class="fact-icon">
+                            <i data-lucide="alert-triangle"></i>
+                        </div>
+                        <div class="fact-stat">1 litro</div>
+                        <h3>Impacto Ambiental</h3>
+                        <p>de ACU puede contaminar hasta 40.000 litros de agua</p>
+                    </div>
+
+                    <div class="fact-card card text-center fade-in">
+                        <div class="fact-icon">
+                            <i data-lucide="droplets"></i>
+                        </div>
+                        <div class="fact-stat">10+ millones</div>
+                        <h3>Recolección Anual</h3>
+                        <p>de kilogramos de ACU gestionados por GrasasBio</p>
+                    </div>
+
+                    <div class="fact-card card text-center fade-in">
+                        <div class="fact-icon">
+                            <i data-lucide="recycle"></i>
+                        </div>
+                        <div class="fact-stat">100%</div>
+                        <h3>Valorización</h3>
+                        <p>del ACU recolectado se convierte en productos útiles</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What is ACU -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="acu-definition">
+                    <div class="acu-content">
+                        <h2>¿Qué son los ACU?</h2>
+                        <p>
+                            Los <strong>Aceites de Cocina Usados (ACU)</strong> son todos aquellos aceites y grasas vegetales o animales 
+                            que han sido utilizados en procesos de cocción y fritura, perdiendo sus propiedades originales y 
+                            convirtiéndose en un residuo que requiere gestión especializada.
+                        </p>
+                        <div class="characteristics">
+                            <h3>Características principales:</h3>
+                            <ul>
+                                <li><i data-lucide="check-circle"></i> Aceites vegetales usados en fritura</li>
+                                <li><i data-lucide="check-circle"></i> Grasas animales de procesos culinarios</li>
+                                <li><i data-lucide="check-circle"></i> Mezclas de aceites y grasas degradadas</li>
+                                <li><i data-lucide="check-circle"></i> Residuos de procesos industriales alimentarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="acu-image">
+                        <img src="src/assets/recycling-process.jpg" alt="Aceites de cocina usados">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process -->
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Proceso de Gestión ACU</h2>
+                    <p>Desde la generación hasta la valorización, conoce cada etapa del proceso que seguimos en GrasasBio.</p>
+                </div>
+                <div class="process-steps-horizontal">
+                    <div class="step-item fade-in">
+                        <div class="step-number">1</div>
+                        <h3>Generación</h3>
+                        <p>Aceites usados en cocinas comerciales e industriales</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">2</div>
+                        <h3>Almacenamiento</h3>
+                        <p>Contenedores especializados para evitar contaminación</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">3</div>
+                        <h3>Recolección</h3>
+                        <p>Transporte especializado con vehículos certificados</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">4</div>
+                        <h3>Procesamiento</h3>
+                        <p>Purificación y transformación en productos de valor</p>
+                    </div>
+                    <div class="step-item fade-in">
+                        <div class="step-number">5</div>
+                        <h3>Valorización</h3>
+                        <p>Conversión en biocombustibles y productos químicos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="section section-primary">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Beneficios de la Gestión Adecuada</h2>
+                    <p>La correcta gestión de ACU genera múltiples beneficios ambientales, económicos y sociales.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Reducción significativa de la contaminación del agua</div>
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Prevención de obstrucciones en sistemas de alcantarillado</div>
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Contribución a la economía circular</div>
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Generación de biocombustibles y productos químicos</div>
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Cumplimiento de la normativa ambiental</div>
+                    <div class="benefit-item"><i data-lucide="leaf"></i> Mejora de la imagen corporativa empresarial</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regulations -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Marco Normativo</h2>
+                    <p>Conoce las principales regulaciones que rigen la gestión de aceites de cocina usados en Colombia.</p>
+                </div>
+                <div class="regulations-grid">
+                    <div class="regulation-card card fade-in">
+                        <div class="regulation-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Resolución 613 de 2018</h3>
+                        <p>Establece los lineamientos para la gestión ambientalmente adecuada de los aceites de cocina usados (ACU).</p>
+                    </div>
+
+                    <div class="regulation-card card fade-in">
+                        <div class="regulation-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Acuerdo 634 de 2015</h3>
+                        <p>Reglamenta la gestión integral de residuos sólidos en Bogotá, incluyendo ACU.</p>
+                    </div>
+
+                    <div class="regulation-card card fade-in">
+                        <div class="regulation-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Decreto 1076 de 2015</h3>
+                        <p>Marco normativo para la gestión integral de residuos peligrosos y especiales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Environmental Impact -->
+        <section class="section">
+            <div class="container">
+                <div class="environmental-impact">
+                    <div class="text-center">
+                        <h2>Impacto Ambiental</h2>
+                    </div>
+                    <div class="impact-comparison">
+                        <div class="problems-section">
+                            <div class="impact-header">
+                                <i data-lucide="alert-triangle"></i>
+                                <h3>Problemas del Mal Manejo</h3>
+                            </div>
+                            <ul class="impact-list">
+                                <li>Contaminación masiva de fuentes hídricas</li>
+                                <li>Obstrucción de sistemas de alcantarillado</li>
+                                <li>Daños a la fauna y flora acuática</li>
+                                <li>Costos elevados de tratamiento de aguas</li>
+                            </ul>
+                        </div>
+                        <div class="solutions-section">
+                            <div class="impact-header">
+                                <i data-lucide="factory"></i>
+                                <h3>Soluciones GrasasBio</h3>
+                            </div>
+                            <ul class="impact-list">
+                                <li>Recolección especializada y segura</li>
+                                <li>Procesamiento en plantas certificadas</li>
+                                <li>Conversión en productos útiles</li>
+                                <li>Contribución a la economía circular</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2>¿Tu Empresa Genera ACU?</h2>
+                    <p>
+                        No permitas que los aceites de cocina usados de tu empresa contaminen el medio ambiente. 
+                        Únete a la gestión responsable con GrasasBio.
+                    </p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-secondary" onclick="openWhatsApp('Solicito recolección de ACU para mi empresa')">
+                            <i data-lucide="arrow-right"></i>
+                            Solicita Recolección de ACU
+                        </button>
+                        <button class="btn btn-outline" onclick="openWhatsApp('Quiero conocer el proceso de gestión ACU')">
+                            Conoce Nuestro Proceso
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logos">
+                        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio">
+                        <img src="src/assets/iscc-logo.png" alt="ISCC">
+                    </div>
+                    <h3>GrasasBio S.A.S.</h3>
+                    <p>Certificación ISCC - International Sustainability and Carbon Certification</p>
+                    <p>Empresa colombiana líder en la gestión responsable de aceites de cocina usados, comprometida con la sostenibilidad y la economía circular.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/grasasbio/?locale=es_LA" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://www.instagram.com/grasas.bio/?hl=es" target="_blank"><i data-lucide="instagram"></i></a>
+                        <a href="https://x.com/grasasbio" target="_blank"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about.html">Quiénes Somos</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="proceso.html">¿Cómo lo Hacemos?</a></li>
+                        <li><a href="normatividad.html">Normatividad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services.html">Recolección de ACU</a></li>
+                        <li><a href="services.html">Certificación</a></li>
+                        <li><a href="services.html">Capacitación</a></li>
+                        <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+                        <li><a href="grabitec.html">Portal Clientes</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i data-lucide="phone"></i> (601) 7618796</p>
+                        <p><i data-lucide="mail"></i> comercial@grasasbio.com</p>
+                        <p><i data-lucide="map-pin"></i> Calle 9 #32a-83<br>Bogotá, Cundinamarca, Colombia</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
