@@ -63,6 +63,30 @@
     --container-padding: 1rem;
 }
 
+/* style.css */
+body {
+  scroll-behavior: smooth;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply bg-green-700 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-800 transition;
+}
+
+/* Navbar links active state */
+nav a.active {
+  color: #166534; /* Tailwind green-800 */
+  font-weight: 600;
+}
+
+/* Hero overlay */
+section[style*="background-image"]::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
