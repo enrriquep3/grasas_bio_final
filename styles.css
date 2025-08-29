@@ -1209,3 +1209,38 @@ h3 {
         grid-template-columns: 1fr;
     }
 }
+/* ==== NAVBAR FIX: keep nav perfectly centered, independent of CTA width ==== */
+.header__inner{
+  /* was: auto 1fr auto; this guarantees a truly centered middle column */
+  grid-template-columns: 1fr auto 1fr;
+  position: relative;
+}
+
+/* Place nav in the exact center column */
+.nav{
+  grid-column: 2;            /* center column */
+  justify-self: center;      /* center the nav block within that column */
+}
+
+/* Keep brand pinned left and CTA pinned right */
+.brand{ grid-column: 1; justify-self: start; }
+.header__cta{ grid-column: 3; justify-self: end; }
+
+/* ==== Make links a bit smaller & tighter so they don't overflow ==== */
+.nav__list{ gap: 16px; }     /* was 22px */
+.nav__link{
+  font-size: clamp(.84rem, 1.1vw, .92rem);   /* was ~.95rem */
+  letter-spacing: .002em;                    /* slightly tighter */
+  padding: .35rem .15rem;                    /* shorter line-height feel */
+}
+
+/* If you still see crowding near 1200–1350px widths, nudge smaller */
+@media (max-width: 1360px){
+  .nav__list{ gap: 14px; }
+  .nav__link{ font-size: .86rem; }
+}
+
+/* Optional: prevent the brand subtitle from stealing width on mid screens */
+@media (max-width: 1280px){
+  .brand__sub{ display:none; }
+}
