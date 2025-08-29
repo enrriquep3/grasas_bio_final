@@ -1,166 +1,380 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrasasBio - Transformamos tu aceite usado</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GrasasBio S.A.S. — Transformamos tu aceite usado en soluciones sostenibles</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="source/assets/favicon_new.png" />
+
+  <!-- Monaco web font -->
+  <link href="https://fonts.cdnfonts.com/css/monaco-2" rel="stylesheet">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css" />
 </head>
-<body class="font-sans antialiased text-gray-800">
+<body>
 
-  <!-- Hero -->
-  <section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-    <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
-      <source src="videocorporativo.mp4" type="video/mp4">
-    </video>
-    <div class="absolute inset-0 bg-black/50"></div>
-    <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-      <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
-        Transformamos tu <span class="text-gradient-orange">aceite de cocina usado</span> en <span class="text-gradient-green">soluciones sostenibles</span>
-      </h1>
-      <p class="text-xl mb-8">Únete al cambio con GRASASBIO S.A.S.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#contacto" class="btn-primary">Solicita tu Recolección</a>
-        <a href="#servicios" class="btn-outline">Conoce Nuestros Servicios</a>
+  <!-- ============ Top bar ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <a href="tel:+576017618796" class="topbar__link">📞 (601) 7618796</a>
+        <span class="topbar__sep">•</span>
+        <a href="mailto:comercial@grasasbio.com" class="topbar__link">✉️ comercial@grasasbio.com</a>
+        <span class="topbar__sep">•</span>
+        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="topbar__link">💬 WhatsApp 300 599 5277</a>
+      </div>
+      <div class="topbar__right">
+        <img src="source/assets/iscc-logo.png" alt="ISCC" class="topbar__iscc" />
+        <span class="topbar__tag">Líderes en gestión responsable de aceites usados</span>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Stats -->
-  <section class="py-16 bg-green-600 text-white text-center">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-      <div>
-        <div class="text-5xl font-bold counter" data-target="10435689">0</div>
-        <p class="mt-2">KG Aceite Recolectado</p>
-      </div>
-      <div>
-        <div class="text-5xl font-bold counter" data-target="7900">0</div>
-        <p class="mt-2">Clientes Atendidos</p>
-      </div>
-      <div>
-        <div class="text-5xl font-bold counter" data-target="40000">0</div>
-        <p class="mt-2">Litros de Agua Protegida</p>
-      </div>
-    </div>
-  </section>
+  <!-- ============ Header / Nav ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <img src="source/assets/grasasbio-logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
+        <div class="brand__text">
+          <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
+        </div>
+      </a>
 
-  <!-- Clientes -->
-  <section class="py-16 text-center">
-    <h2 class="text-3xl font-bold mb-12">Trabajamos con Diferentes Tipos de Clientes</h2>
-    <div class="flex flex-wrap justify-center gap-8">
-      <div class="icon-card">🍽️ Restaurantes</div>
-      <div class="icon-card">🏫 Centros Educativos</div>
-      <div class="icon-card">🏢 Cadenas</div>
-      <div class="icon-card">☕ Industria Alimentaria</div>
-      <div class="icon-card">🥖 Panaderías</div>
-      <div class="icon-card">🏘️ Conjuntos Residenciales</div>
-      <div class="icon-card">🛒 Supermercados</div>
-      <div class="icon-card">🚚 Catering</div>
-    </div>
-    <a href="https://wa.me/573005995277" target="_blank" class="btn-primary mt-10 inline-block">Únete con Nosotros</a>
-  </section>
-
-  <!-- Quiénes Somos -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-      <div>
-        <h2 class="text-4xl font-bold mb-4">Quiénes Somos</h2>
-        <h3 class="text-2xl text-green-600 font-semibold mb-6">GRASASBIO S.A.S.</h3>
-        <p class="mb-4">Es una empresa colombiana líder en la gestión de <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.</p>
-        <p class="mb-6">Brindamos nuestros servicios a empresas del sector gastronómico e industrial, cumpliendo con altos estándares de calidad, seguridad y atención al cliente.</p>
-        <ul class="list-disc pl-6 space-y-2 mb-6">
-          <li>Cumplir la normativa ambiental vigente</li>
-          <li>Generar bienestar en nuestras comunidades</li>
-          <li>Promover la economía circular</li>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
+          <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
+          <li><a class="nav__link" href="nosotros.html">QUIÉNES SOMOS</a></li>
+          <li><a class="nav__link" href="comolohacemos.html">¿CÓMO LO HACEMOS?</a></li>
+          <li><a class="nav__link" href="acu.html">¿QUÉ ES EL ACU?</a></li>
+          <li><a class="nav__link" href="normatividad.html">NORMATIVIDAD</a></li>
+          <li><a class="nav__link" href="grabitec.html">GRABITEC</a></li>
+          <li><a class="nav__link" href="puntos-limpios.html">PUNTOS LIMPIOS</a></li>
+          <li><a class="btn btn--primary nav__cta" href="contacto.html#form">Solicita tu Recolección</a></li>
         </ul>
-        <a href="#about" class="btn-primary">Conoce Más Sobre Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO (video background) ============ -->
+  <section class="hero">
+    <video class="hero__video" autoplay muted loop playsinline poster="source/assets/hero-fleet.jpg">
+      <source src="source/assets/hero-video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <h1 class="hero__title">
+        Transformamos tu
+        <span class="text-grad--orange">aceite de cocina usado</span>
+        en
+        <span class="text-grad--green">soluciones sostenibles</span>
+      </h1>
+      <p class="hero__subtitle">Únete al cambio con <strong>GRASASBIO S.A.S.</strong></p>
+      <div class="hero__actions">
+        <a href="contacto.html#form" class="btn btn--accent">Solicita tu Recolección</a>
+        <a href="servicios.html" class="btn btn--outline">Conoce Nuestros Servicios</a>
       </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat">
+        <div class="stat__number counter" data-target="10435689">0</div>
+        <div class="stat__label">KG Aceite Recolectado</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number counter" data-target="7900">0</div>
+        <div class="stat__label">Clientes Atendidos</div>
+      </div>
+      <div class="stat">
+        <div class="stat__number counter" data-target="40000">0</div>
+        <div class="stat__label">Litros de Agua Protegida</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT TYPES (marquee) ============ -->
+  <section class="clients">
+    <div class="container">
+      <h2 class="section-title">Trabajamos con Diferentes Tipos de Clientes</h2>
+
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="client-card">🍽️ <span>Restaurantes</span></div>
+          <div class="client-card">🏫 <span>Centros Educativos</span></div>
+          <div class="client-card">🏢 <span>Cadenas</span></div>
+          <div class="client-card">☕ <span>Industria Alimentaria</span></div>
+          <div class="client-card">🥖 <span>Panaderías</span></div>
+          <div class="client-card">🏘️ <span>Conjuntos Residenciales</span></div>
+          <div class="client-card">🛒 <span>Supermercados</span></div>
+          <div class="client-card">🚚 <span>Catering</span></div>
+
+          <!-- duplicate once for seamless loop -->
+          <div class="client-card">🍽️ <span>Restaurantes</span></div>
+          <div class="client-card">🏫 <span>Centros Educativos</span></div>
+          <div class="client-card">🏢 <span>Cadenas</span></div>
+          <div class="client-card">☕ <span>Industria Alimentaria</span></div>
+          <div class="client-card">🥖 <span>Panaderías</span></div>
+          <div class="client-card">🏘️ <span>Conjuntos Residenciales</span></div>
+          <div class="client-card">🛒 <span>Supermercados</span></div>
+          <div class="client-card">🚚 <span>Catering</span></div>
+        </div>
+      </div>
+
+      <div class="clients__cta">
+        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="btn btn--accent">Únete con Nosotros</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <h2 class="section-title">Quiénes Somos</h2>
+        <h3 class="about__subtitle">GRASASBIO S.A.S.</h3>
+
+        <p>
+          Somos una empresa colombiana líder en la gestión de
+          <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.
+        </p>
+        <p>
+          Brindamos servicios a empresas del sector gastronómico e industrial, cumpliendo con altos
+          estándares de calidad, seguridad y atención al cliente. Nuestro propósito es reducir el
+          impacto ambiental y proteger la salud pública a través de una operación ética, sostenible y
+          responsable.
+        </p>
+
+        <h4 class="about__commit-title">Estamos comprometidos con:</h4>
+        <ul class="about__commit-list">
+          <li>✔️ Cumplir la normativa ambiental vigente</li>
+          <li>✔️ Generar bienestar en nuestras comunidades</li>
+          <li>✔️ Promover la economía circular</li>
+        </ul>
+
+        <a href="nosotros.html" class="btn btn--primary">Conoce Más Sobre Nosotros</a>
+      </div>
+
+      <div class="about__media">
+        <img src="source/assets/recycling-process.jpg" alt="Proceso de reciclaje de aceites" class="about__img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="services__intro">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-desc">
+          Ofrecemos soluciones integrales para la gestión responsable de aceites usados,
+          adaptándonos a las necesidades específicas de cada cliente.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card fade-in" style="--delay:0ms">
+          <div class="card__icon">🚚</div>
+          <h3 class="card__title">Recolección Especializada</h3>
+          <p class="card__text">
+            Servicio de recolección programada con vehículos especializados y personal capacitado.
+          </p>
+        </article>
+
+        <article class="card fade-in" style="--delay:100ms">
+          <div class="card__icon">♻️</div>
+          <h3 class="card__title">Procesamiento Sostenible</h3>
+          <p class="card__text">
+            Transformamos aceites usados en productos de valor agregado mediante procesos eco-amigables.
+          </p>
+        </article>
+
+        <article class="card fade-in" style="--delay:200ms">
+          <div class="card__icon">🛡️</div>
+          <h3 class="card__title">Cumplimiento Normativo</h3>
+          <p class="card__text">
+            Garantizamos el cumplimiento de toda la normativa ambiental vigente.
+          </p>
+        </article>
+
+        <article class="card fade-in" style="--delay:300ms">
+          <div class="card__icon">🏆</div>
+          <h3 class="card__title">Certificación y Trazabilidad</h3>
+          <p class="card__text">
+            Proveemos certificados y seguimiento completo de todo el proceso de gestión.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALIADOS (logos placeholder) ============ -->
+  <section class="aliados">
+    <div class="container">
+      <h2 class="section-title">Nuestros Aliados</h2>
+      <p class="section-desc">Empresas líderes que confían en nuestros servicios para la gestión responsable de aceites usados</p>
+
+      <div class="aliados__board">
+        <!-- Replace this image with a grid of real logos as you receive them -->
+        <img src="source/assets/ISCC.png" alt="Aliados" class="aliados__img" />
+      </div>
+
+      <p class="aliados__note">En espera del envío de las imágenes en PNG para incluirlas</p>
+    </div>
+  </section>
+
+  <!-- ============ IMPACTO ACU ============ -->
+  <section class="impacto">
+    <div class="container">
+      <div class="impacto__intro">
+        <h2 class="section-title">El Impacto de la Mala Disposición del ACU</h2>
+        <p class="section-desc">
+          La mala disposición del Aceite de Cocina Usado (ACU) tiene consecuencias ambientales y sanitarias graves.
+        </p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card fade-in" style="--delay:0ms">💧 Contamina cuerpos de agua y suelos</div>
+        <div class="impact-card fade-in" style="--delay:100ms">🌱 Afecta negativamente la fauna y flora local</div>
+        <div class="impact-card fade-in" style="--delay:200ms">🌍 Contribuye al cambio climático</div>
+        <div class="impact-card fade-in" style="--delay:300ms">⚠️ Genera obstrucciones en redes de saneamiento</div>
+        <div class="impact-card fade-in" style="--delay:400ms">❤️ Agrava problemas de salud pública</div>
+        <div class="impact-card fade-in" style="--delay:500ms">💨 Crea malos olores y atrae plagas</div>
+      </div>
+
+      <div class="dato">
+        <h3 class="dato__title">📌 Dato Impactante</h3>
+        <p>
+          Un solo litro de ACU puede contaminar hasta <strong>40.000 litros de agua</strong>,
+          lo que equivale al consumo doméstico de una persona durante un año.
+        </p>
+      </div>
+
+      <div class="prevent">
+        <h4 class="prevent__title">¿Cómo prevenirlo?</h4>
+        <p class="prevent__text">
+          Recicla el aceite de manera adecuada:
+          <br />🧴 Almacénalo en un recipiente plástico con tapa y programa tu recolección con <strong>GRASASBIO</strong>.
+        </p>
+        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="btn btn--accent prevent__btn">
+          Solicita tu Recolección
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">¿Listo para Hacer el Cambio?</h2>
+      <p class="cta__desc">
+        Únete a miles de empresas que ya confían en GrasasBio para la gestión responsable de sus aceites usados.
+        Contribuye al cuidado del medio ambiente mientras cumples con la normativa vigente.
+      </p>
+      <div class="cta__actions">
+        <a href="contacto.html#form" class="btn btn--accent">Solicita tu Cotización Gratuita</a>
+        <a href="tel:+576017618796" class="btn btn--outline">Llámanos: (601) 7618796</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <!-- Brand / about -->
       <div>
-        <img src="recycling-process.jpg" alt="Proceso de reciclaje" class="rounded-2xl shadow-lg">
+        <div class="footer__brand">
+          <img src="source/assets/grasasbio-logo.png" alt="GrasasBio" class="footer__logo" />
+          <div>
+            <h3 class="footer__title">GrasasBio <span class="footer__title-light">S.A.S.</span></h3>
+            <p class="footer__note">Certificación Internacional ISCC</p>
+          </div>
+        </div>
+        <p class="footer__about">
+          Líder en Colombia en la gestión responsable de aceites de cocina usados y grasas vegetales y animales.
+          Promovemos soluciones sostenibles para un futuro más verde.
+        </p>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/GrasasbioSAS" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+          <a href="https://www.instagram.com/grasasbio" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+          <a href="https://www.tiktok.com/@GrasasbioSAS" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div>
+        <h4 class="footer__h4">Enlaces Rápidos</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Quiénes Somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="acu.html">¿Qué es el ACU?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="footer__h4">Nuestros Servicios</h4>
+        <ul class="footer__links">
+          <li><a href="servicios.html#recoleccion">Recolección de ACU</a></li>
+          <li><a href="servicios.html#procesamiento">Procesamiento Sostenible</a></li>
+          <li><a href="servicios.html#cumplimiento">Gestión Ambiental</a></li>
+          <li><a href="servicios.html#capacitacion">Capacitación</a></li>
+          <li><a href="servicios.html#trazabilidad">Trazabilidad y Certificación</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Map -->
+      <div>
+        <h4 class="footer__h4">Contacto</h4>
+        <ul class="footer__contact">
+          <li>📍 Carrera 9 #32a–83, Bogotá, Colombia</li>
+          <li>📞 <a href="tel:+576017618796">(601) 7618796</a></li>
+          <li>📱 <a href="tel:+573005995277">300 599 5277</a> — <a href="tel:+573209354466">320 935 4466</a></li>
+          <li>✉️ <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a></li>
+        </ul>
+
+        <div class="footer__map">
+          <iframe
+            title="Ubicación GrasasBio"
+            width="100%"
+            height="220"
+            style="border:0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Carrera%209%20%2332a-83%20Bogot%C3%A1%20Colombia&output=embed">
+          </iframe>
+        </div>
       </div>
     </div>
-  </section>
 
-  <!-- Servicios -->
-  <section class="py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-bold mb-6">Nuestros Servicios</h2>
-      <p class="mb-12 max-w-2xl mx-auto">Ofrecemos soluciones integrales para la gestión responsable de aceites usados.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="card">🚚 Recolección Especializada</div>
-        <div class="card">♻️ Procesamiento Sostenible</div>
-        <div class="card">🛡️ Cumplimiento Normativo</div>
-        <div class="card">🏆 Certificación y Trazabilidad</div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© 2025 GrasasBio S.A.S. Todos los derechos reservados.</span>
+        <span class="footer__policy">
+          <a href="privacidad.html">Política de Privacidad</a> &nbsp;|&nbsp;
+          <a href="terminos.html">Términos de Servicio</a>
+        </span>
       </div>
     </div>
-  </section>
-
-  <!-- Aliados -->
-  <section class="py-16 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold mb-6">Nuestros Aliados</h2>
-    <p class="mb-8">Empresas líderes que confían en nuestros servicios</p>
-    <div class="mx-auto bg-white p-8 rounded-2xl shadow-md max-w-lg">
-      <img src="aliados.png" alt="Logos de aliados">
-    </div>
-    <p class="mt-4 text-sm italic">En espera del envío de imágenes para incluir</p>
-  </section>
-
-  <!-- Impacto -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8">El Impacto de la Mala Disposición del ACU</h2>
-      <p class="mb-12">La mala disposición del Aceite de Cocina Usado tiene consecuencias ambientales y sanitarias graves.</p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="impact-card">💧 Contaminar cuerpos de agua y suelos</div>
-        <div class="impact-card">🌱 Afectar negativamente fauna y flora</div>
-        <div class="impact-card">🌍 Contribuir al cambio climático</div>
-        <div class="impact-card">⚠️ Obstrucciones en redes de saneamiento</div>
-        <div class="impact-card">❤️ Problemas de salud pública</div>
-        <div class="impact-card">💨 Malos olores y plagas</div>
-      </div>
-      <div class="bg-green-600 text-white p-8 rounded-2xl mt-12">
-        <h3 class="text-2xl font-bold mb-4">📌 Dato Impactante</h3>
-        <p>Un solo litro de ACU puede contaminar hasta <strong>40.000 litros de agua</strong>.</p>
-      </div>
-      <div class="mt-8">
-        <a href="https://wa.me/573005995277" target="_blank" class="btn-primary w-full sm:w-auto">Solicita tu Recolección</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-20 bg-green-700 text-white text-center">
-    <h2 class="text-4xl font-bold mb-6">¿Listo para Hacer el Cambio?</h2>
-    <p class="mb-8 max-w-2xl mx-auto">Únete a miles de empresas que ya confían en GrasasBio para la gestión responsable de sus aceites usados.</p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#cotizacion" class="btn-accent">Solicita tu Cotización Gratuita</a>
-      <a href="tel:+576017618796" class="btn-outline">Llámanos: (601) 7618796</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-12 bg-gray-900 text-gray-300 text-sm text-center">
-    <p>&copy; 2024 GrasasBio S.A.S. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    // Animated counter
-    document.querySelectorAll('.counter').forEach(counter => {
-      const target = +counter.dataset.target;
-      let count = 0;
-      const increment = target / 200;
-      function updateCounter() {
-        count += increment;
-        if (count < target) {
-          counter.textContent = Math.floor(count).toLocaleString('es-CO');
-          requestAnimationFrame(updateCounter);
-        } else {
-          counter.textContent = target.toLocaleString('es-CO');
-        }
-      }
-      updateCounter();
-    });
-  </script>
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="wa-fab" aria-label="Escríbenos por WhatsApp">
+    <img src="source/assets/logo.png" alt="" aria-hidden="true" class="wa-fab__bg" />
+    <span class="wa-fab__emoji">🟢</span>
+  </a>
+
+  <!-- Global JS -->
+  <script src="js/global.js"></script>
 </body>
 </html>
+
