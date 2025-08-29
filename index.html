@@ -134,36 +134,41 @@
     </div>
   </div>
 
-  <!-- ============ Header / Nav ============ -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="index.html" class="brand" aria-label="GrasasBio inicio">
-        <img src="src/assets/logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
-        <div class="brand__text">
-          <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
-        </div>
-      </a>
+ <header class="header">
+  <div class="container header__inner">
+    <!-- Brand -->
+    <a href="index.html" class="brand" aria-label="GrasasBio inicio">
+      <img src="src/assets/logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
+      <div class="brand__text">
+        <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
+      </div>
+    </a>
 
-      <nav class="nav" aria-label="Principal">
-        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
-          <i data-lucide="menu"></i>
-        </button>
-        <ul class="nav__list" id="navList">
-          <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
-          <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
-          <li><a class="nav__link" href="nosotros.html">QUIÉNES SOMOS</a></li>
-          <li><a class="nav__link" href="comolohacemos.html">¿CÓMO LO HACEMOS?</a></li>
-          <li><a class="nav__link" href="acu.html">¿QUÉ ES EL ACU?</a></li>
-          <li><a class="nav__link" href="normatividad.html">NORMATIVIDAD</a></li>
-          <li><a class="nav__link" href="grabitec.html">GRABITEC</a></li>
-          <li><a class="nav__link" href="puntos-limpios.html">PUNTOS LIMPIOS</a></li>
-          <li class="nav__cta-mobile"><a class="btn btn--primary" href="contacto.html#form">Solicita tu Recolección</a></li>
-        </ul>
-      </nav>
+    <!-- Centered Nav -->
+    <nav class="nav" aria-label="Principal">
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+        <i data-lucide="menu"></i>
+      </button>
 
-      <a class="btn btn--cta header__cta" href="contacto.html#form">Solicita tu Recolección</a>
-    </div>
-  </header>
+      <ul class="nav__list" id="navList">
+        <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
+        <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
+        <li><a class="nav__link" href="nosotros.html">QUIÉNES SOMOS</a></li>
+        <li><a class="nav__link" href="comolohacemos.html">¿CÓMO LO HACEMOS?</a></li>
+        <li><a class="nav__link" href="acu.html">¿QUÉ ES EL ACU?</a></li>
+
+        <!-- CTA visible in the dropdown on mobile -->
+        <li class="nav__cta-mobile">
+          <a class="btn btn--primary" href="contacto.html#form">Solicita tu Recolección</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Right CTA (desktop) -->
+    <a class="btn btn--cta header__cta" href="contacto.html#form">Solicita tu Recolección</a>
+  </div>
+</header>
+
 
   <!-- ============ HERO (video) ============ -->
   <section class="hero">
@@ -410,15 +415,20 @@
         </div>
 
         <div class="footer-section">
-          <h4>Enlaces Rápidos</h4>
-          <ul class="footer-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Quiénes Somos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="acu.html">ACU</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
+  <h4>Enlaces Rápidos</h4>
+  <ul class="footer-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="nosotros.html">Quiénes Somos</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="comolohacemos.html">¿Cómo lo Hacemos?</a></li>
+    <li><a href="acu.html">ACU</a></li>
+    <li><a href="normatividad.html">Normatividad</a></li>
+    <li><a href="grabitec.html">Grabitec</a></li>
+    <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</div>
+
 
         <div class="footer-section">
           <h4>Nuestros Servicios</h4>
