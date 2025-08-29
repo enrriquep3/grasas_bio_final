@@ -6,10 +6,10 @@
   <title>GrasasBio S.A.S. — Transformamos tu aceite usado en soluciones sostenibles</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="source/assets/favicon_new.png" />
+  <link rel="icon" type="image/png" href="src/assets/favicon_new.png" />
 
-  <!-- Monaco web font -->
-  <link href="https://fonts.cdnfonts.com/css/monaco-2" rel="stylesheet">
+  <!-- Professional font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Global CSS -->
   <link rel="stylesheet" href="css/global.css" />
@@ -20,14 +20,14 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
-        <a href="tel:+576017618796" class="topbar__link">📞 (601) 7618796</a>
+        <a href="tel:+576017618796" class="topbar__link"><i data-lucide="phone"></i> (601) 7618796</a>
         <span class="topbar__sep">•</span>
-        <a href="mailto:comercial@grasasbio.com" class="topbar__link">✉️ comercial@grasasbio.com</a>
+        <a href="mailto:comercial@grasasbio.com" class="topbar__link"><i data-lucide="mail"></i> comercial@grasasbio.com</a>
         <span class="topbar__sep">•</span>
-        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="topbar__link">💬 WhatsApp 300 599 5277</a>
+        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="topbar__link"><i data-lucide="message-circle"></i> WhatsApp 300 599 5277</a>
       </div>
       <div class="topbar__right">
-        <img src="source/assets/iscc-logo.png" alt="ISCC" class="topbar__iscc" />
+        <img src="src/assets/iscc-logo.png" alt="ISCC" class="topbar__iscc" />
         <span class="topbar__tag">Líderes en gestión responsable de aceites usados</span>
       </div>
     </div>
@@ -37,14 +37,14 @@
   <header class="header">
     <div class="container header__inner">
       <a href="index.html" class="brand">
-        <img src="source/assets/grasasbio-logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
+        <img src="src/assets/grasasbio-logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
         <div class="brand__text">
           <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
         </div>
       </a>
 
       <nav class="nav" aria-label="Principal">
-        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
         <ul class="nav__list" id="navList">
           <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
           <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
@@ -62,8 +62,8 @@
 
   <!-- ============ HERO (video background) ============ -->
   <section class="hero">
-    <video class="hero__video" autoplay muted loop playsinline poster="source/assets/hero-fleet.jpg">
-      <source src="source/assets/hero-video.mp4" type="video/mp4" />
+    <video class="hero__video" autoplay muted playsinline loop preload="metadata" poster="src/assets/hero-fleet.jpg">
+      <source src="src/assets/hero-video.mp4" type="video/mp4" />
     </video>
     <div class="hero__overlay"></div>
 
@@ -77,7 +77,7 @@
       <p class="hero__subtitle">Únete al cambio con <strong>GRASASBIO S.A.S.</strong></p>
       <div class="hero__actions">
         <a href="contacto.html#form" class="btn btn--accent">Solicita tu Recolección</a>
-        <a href="servicios.html" class="btn btn--outline">Conoce Nuestros Servicios</a>
+        <a href="servicios.html" class="btn btn--outline btn--outline-white">Conoce Nuestros Servicios</a>
       </div>
     </div>
   </section>
@@ -86,14 +86,17 @@
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat">
+        <i data-lucide="recycle" class="stat__icon"></i>
         <div class="stat__number counter" data-target="10435689">0</div>
         <div class="stat__label">KG Aceite Recolectado</div>
       </div>
       <div class="stat">
+        <i data-lucide="users" class="stat__icon"></i>
         <div class="stat__number counter" data-target="7900">0</div>
         <div class="stat__label">Clientes Atendidos</div>
       </div>
       <div class="stat">
+        <i data-lucide="droplets" class="stat__icon"></i>
         <div class="stat__number counter" data-target="40000">0</div>
         <div class="stat__label">Litros de Agua Protegida</div>
       </div>
@@ -105,26 +108,26 @@
     <div class="container">
       <h2 class="section-title">Trabajamos con Diferentes Tipos de Clientes</h2>
 
-      <div class="marquee">
+      <div class="marquee" aria-label="Tipos de clientes">
         <div class="marquee__track">
-          <div class="client-card">🍽️ <span>Restaurantes</span></div>
-          <div class="client-card">🏫 <span>Centros Educativos</span></div>
-          <div class="client-card">🏢 <span>Cadenas</span></div>
-          <div class="client-card">☕ <span>Industria Alimentaria</span></div>
-          <div class="client-card">🥖 <span>Panaderías</span></div>
-          <div class="client-card">🏘️ <span>Conjuntos Residenciales</span></div>
-          <div class="client-card">🛒 <span>Supermercados</span></div>
-          <div class="client-card">🚚 <span>Catering</span></div>
+          <div class="client-card"><i data-lucide="utensils"></i><span>Restaurantes</span></div>
+          <div class="client-card"><i data-lucide="school"></i><span>Centros Educativos</span></div>
+          <div class="client-card"><i data-lucide="building-2"></i><span>Cadenas</span></div>
+          <div class="client-card"><i data-lucide="coffee"></i><span>Industria Alimentaria</span></div>
+          <div class="client-card"><i data-lucide="home"></i><span>Panaderías</span></div>
+          <div class="client-card"><i data-lucide="building-2"></i><span>Conjuntos Residenciales</span></div>
+          <div class="client-card"><i data-lucide="shopping-cart"></i><span>Supermercados</span></div>
+          <div class="client-card"><i data-lucide="truck"></i><span>Catering</span></div>
 
-          <!-- duplicate once for seamless loop -->
-          <div class="client-card">🍽️ <span>Restaurantes</span></div>
-          <div class="client-card">🏫 <span>Centros Educativos</span></div>
-          <div class="client-card">🏢 <span>Cadenas</span></div>
-          <div class="client-card">☕ <span>Industria Alimentaria</span></div>
-          <div class="client-card">🥖 <span>Panaderías</span></div>
-          <div class="client-card">🏘️ <span>Conjuntos Residenciales</span></div>
-          <div class="client-card">🛒 <span>Supermercados</span></div>
-          <div class="client-card">🚚 <span>Catering</span></div>
+          <!-- duplicate once for a seamless slow loop -->
+          <div class="client-card"><i data-lucide="utensils"></i><span>Restaurantes</span></div>
+          <div class="client-card"><i data-lucide="school"></i><span>Centros Educativos</span></div>
+          <div class="client-card"><i data-lucide="building-2"></i><span>Cadenas</span></div>
+          <div class="client-card"><i data-lucide="coffee"></i><span>Industria Alimentaria</span></div>
+          <div class="client-card"><i data-lucide="home"></i><span>Panaderías</span></div>
+          <div class="client-card"><i data-lucide="building-2"></i><span>Conjuntos Residenciales</span></div>
+          <div class="client-card"><i data-lucide="shopping-cart"></i><span>Supermercados</span></div>
+          <div class="client-card"><i data-lucide="truck"></i><span>Catering</span></div>
         </div>
       </div>
 
@@ -154,16 +157,16 @@
 
         <h4 class="about__commit-title">Estamos comprometidos con:</h4>
         <ul class="about__commit-list">
-          <li>✔️ Cumplir la normativa ambiental vigente</li>
-          <li>✔️ Generar bienestar en nuestras comunidades</li>
-          <li>✔️ Promover la economía circular</li>
+          <li><i data-lucide="check-circle-2"></i> Cumplir la normativa ambiental vigente</li>
+          <li><i data-lucide="check-circle-2"></i> Generar bienestar en nuestras comunidades</li>
+          <li><i data-lucide="check-circle-2"></i> Promover la economía circular</li>
         </ul>
 
         <a href="nosotros.html" class="btn btn--primary">Conoce Más Sobre Nosotros</a>
       </div>
 
       <div class="about__media">
-        <img src="source/assets/recycling-process.jpg" alt="Proceso de reciclaje de aceites" class="about__img" />
+        <img src="src/assets/recycling-process.jpg" alt="Proceso de reciclaje de aceites" class="about__img" />
       </div>
     </div>
   </section>
@@ -181,31 +184,31 @@
 
       <div class="cards">
         <article class="card fade-in" style="--delay:0ms">
-          <div class="card__icon">🚚</div>
+          <div class="card__icon"><i data-lucide="truck"></i></div>
           <h3 class="card__title">Recolección Especializada</h3>
           <p class="card__text">
             Servicio de recolección programada con vehículos especializados y personal capacitado.
           </p>
         </article>
 
-        <article class="card fade-in" style="--delay:100ms">
-          <div class="card__icon">♻️</div>
+        <article class="card fade-in" style="--delay:120ms">
+          <div class="card__icon"><i data-lucide="recycle"></i></div>
           <h3 class="card__title">Procesamiento Sostenible</h3>
           <p class="card__text">
             Transformamos aceites usados en productos de valor agregado mediante procesos eco-amigables.
           </p>
         </article>
 
-        <article class="card fade-in" style="--delay:200ms">
-          <div class="card__icon">🛡️</div>
+        <article class="card fade-in" style="--delay:240ms">
+          <div class="card__icon"><i data-lucide="shield-check"></i></div>
           <h3 class="card__title">Cumplimiento Normativo</h3>
           <p class="card__text">
             Garantizamos el cumplimiento de toda la normativa ambiental vigente.
           </p>
         </article>
 
-        <article class="card fade-in" style="--delay:300ms">
-          <div class="card__icon">🏆</div>
+        <article class="card fade-in" style="--delay:360ms">
+          <div class="card__icon"><i data-lucide="award"></i></div>
           <h3 class="card__title">Certificación y Trazabilidad</h3>
           <p class="card__text">
             Proveemos certificados y seguimiento completo de todo el proceso de gestión.
@@ -222,8 +225,8 @@
       <p class="section-desc">Empresas líderes que confían en nuestros servicios para la gestión responsable de aceites usados</p>
 
       <div class="aliados__board">
-        <!-- Replace this image with a grid of real logos as you receive them -->
-        <img src="source/assets/ISCC.png" alt="Aliados" class="aliados__img" />
+        <!-- Replace with real logos grid as you receive them -->
+        <img src="src/assets/ISCC.png" alt="Aliados" class="aliados__img" />
       </div>
 
       <p class="aliados__note">En espera del envío de las imágenes en PNG para incluirlas</p>
@@ -241,16 +244,16 @@
       </div>
 
       <div class="impact-grid">
-        <div class="impact-card fade-in" style="--delay:0ms">💧 Contamina cuerpos de agua y suelos</div>
-        <div class="impact-card fade-in" style="--delay:100ms">🌱 Afecta negativamente la fauna y flora local</div>
-        <div class="impact-card fade-in" style="--delay:200ms">🌍 Contribuye al cambio climático</div>
-        <div class="impact-card fade-in" style="--delay:300ms">⚠️ Genera obstrucciones en redes de saneamiento</div>
-        <div class="impact-card fade-in" style="--delay:400ms">❤️ Agrava problemas de salud pública</div>
-        <div class="impact-card fade-in" style="--delay:500ms">💨 Crea malos olores y atrae plagas</div>
+        <div class="impact-card fade-in" style="--delay:0ms"><i data-lucide="droplets"></i> Contamina cuerpos de agua y suelos</div>
+        <div class="impact-card fade-in" style="--delay:120ms"><i data-lucide="leaf"></i> Afecta negativamente la fauna y flora local</div>
+        <div class="impact-card fade-in" style="--delay:240ms"><i data-lucide="globe"></i> Contribuye al cambio climático</div>
+        <div class="impact-card fade-in" style="--delay:360ms"><i data-lucide="alert-triangle"></i> Genera obstrucciones en redes de saneamiento</div>
+        <div class="impact-card fade-in" style="--delay:480ms"><i data-lucide="heart"></i> Agrava problemas de salud pública</div>
+        <div class="impact-card fade-in" style="--delay:600ms"><i data-lucide="wind"></i> Crea malos olores y atrae plagas</div>
       </div>
 
       <div class="dato">
-        <h3 class="dato__title">📌 Dato Impactante</h3>
+        <h3 class="dato__title"><i data-lucide="map-pin"></i> Dato Impactante</h3>
         <p>
           Un solo litro de ACU puede contaminar hasta <strong>40.000 litros de agua</strong>,
           lo que equivale al consumo doméstico de una persona durante un año.
@@ -261,7 +264,7 @@
         <h4 class="prevent__title">¿Cómo prevenirlo?</h4>
         <p class="prevent__text">
           Recicla el aceite de manera adecuada:
-          <br />🧴 Almacénalo en un recipiente plástico con tapa y programa tu recolección con <strong>GRASASBIO</strong>.
+          <br />Almacénalo en un recipiente plástico con tapa y programa tu recolección con <strong>GRASASBIO</strong>.
         </p>
         <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="btn btn--accent prevent__btn">
           Solicita tu Recolección
@@ -280,7 +283,7 @@
       </p>
       <div class="cta__actions">
         <a href="contacto.html#form" class="btn btn--accent">Solicita tu Cotización Gratuita</a>
-        <a href="tel:+576017618796" class="btn btn--outline">Llámanos: (601) 7618796</a>
+        <a href="tel:+576017618796" class="btn btn--outline btn--outline-white">Llámanos: (601) 7618796</a>
       </div>
     </div>
   </section>
@@ -291,7 +294,7 @@
       <!-- Brand / about -->
       <div>
         <div class="footer__brand">
-          <img src="source/assets/grasasbio-logo.png" alt="GrasasBio" class="footer__logo" />
+          <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="footer__logo" />
           <div>
             <h3 class="footer__title">GrasasBio <span class="footer__title-light">S.A.S.</span></h3>
             <p class="footer__note">Certificación Internacional ISCC</p>
@@ -302,9 +305,9 @@
           Promovemos soluciones sostenibles para un futuro más verde.
         </p>
         <div class="footer__social">
-          <a href="https://www.facebook.com/GrasasbioSAS" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
-          <a href="https://www.instagram.com/grasasbio" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
-          <a href="https://www.tiktok.com/@GrasasbioSAS" target="_blank" rel="noopener" aria-label="TikTok">🎵</a>
+          <a href="https://www.facebook.com/GrasasbioSAS" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="https://www.instagram.com/grasasbio" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://www.tiktok.com/@GrasasbioSAS" target="_blank" rel="noopener" aria-label="TikTok"><i data-lucide="music-2"></i></a>
         </div>
       </div>
 
@@ -336,10 +339,10 @@
       <div>
         <h4 class="footer__h4">Contacto</h4>
         <ul class="footer__contact">
-          <li>📍 Carrera 9 #32a–83, Bogotá, Colombia</li>
-          <li>📞 <a href="tel:+576017618796">(601) 7618796</a></li>
-          <li>📱 <a href="tel:+573005995277">300 599 5277</a> — <a href="tel:+573209354466">320 935 4466</a></li>
-          <li>✉️ <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a></li>
+          <li><i data-lucide="map-pin"></i> Carrera 9 #32a–83, Bogotá, Colombia</li>
+          <li><i data-lucide="phone"></i> <a href="tel:+576017618796">(601) 7618796</a></li>
+          <li><i data-lucide="smartphone"></i> <a href="tel:+573005995277">300 599 5277</a> — <a href="tel:+573209354466">320 935 4466</a></li>
+          <li><i data-lucide="mail"></i> <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a></li>
         </ul>
 
         <div class="footer__map">
@@ -369,12 +372,13 @@
 
   <!-- WhatsApp floating button -->
   <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="wa-fab" aria-label="Escríbenos por WhatsApp">
-    <img src="source/assets/logo.png" alt="" aria-hidden="true" class="wa-fab__bg" />
-    <span class="wa-fab__emoji">🟢</span>
+    <i data-lucide="message-circle"></i>
   </a>
 
-  <!-- Global JS -->
+  <!-- Lucide icons + Global JS -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script src="js/global.js"></script>
 </body>
 </html>
+
 
