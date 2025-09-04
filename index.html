@@ -167,36 +167,57 @@
     </div>
   </section>
 
-  <!-- Quiénes Somos (video fills full box height) -->
-  <section class="about" id="about">
-    <div class="container about__grid">
-      <div class="about__text">
-        <h2 class="section-title">Quiénes Somos</h2>
-        <h3 class="about__subtitle">GRASASBIO S.A.S.</h3>
-        <p>Somos una empresa colombiana líder en la gestión de <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.</p>
-        <p>Brindamos servicios al sector gastronómico e industrial, cumpliendo con altos estándares de calidad, seguridad y atención al cliente. Nuestro propósito es reducir el impacto ambiental y proteger la salud pública a través de una operación ética, sostenible y responsable.</p>
-        <h4 class="about__commit-title">Estamos comprometidos con:</h4>
-        <ul class="about__commit-list">
-          <li>✔️ Cumplir la normativa ambiental vigente</li>
-          <li>✔️ Generar bienestar en nuestras comunidades</li>
-          <li>✔️ Promover la economía circular</li>
-        </ul>
-        <a href="nosotros.html" class="btn btn--primary">Conoce Más Sobre Nosotros</a>
-      </div>
+  
+ <!-- ========== QUIÉNES SOMOS (drop-in) ========== -->
+<section class="about" id="about">
+  <div class="container about__grid">
+    <!-- Text -->
+    <div class="about__text">
+      <h2 class="section-title">Quiénes Somos</h2>
+      <h3 class="about__subtitle">GRASASBIO S.A.S.</h3>
 
-      <div class="about__media">
-        <div class="video-box" aria-label="Video institucional">
-          <iframe 
-            src="https://player.vimeo.com/video/1115942104?badge=0&autopause=1&title=0&byline=0&portrait=0"
-            frameborder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            title="Videocorporativo">
-          </iframe>
-        </div>
+      <p>
+        Somos una empresa colombiana líder en la gestión de
+        <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.
+      </p>
+      <p>
+        Brindamos servicios al sector gastronómico e industrial, cumpliendo con altos estándares de calidad,
+        seguridad y atención al cliente. Nuestro propósito es reducir el impacto ambiental y proteger la salud
+        pública a través de una operación ética, sostenible y responsable.
+      </p>
+
+      <h4 class="about__commit-title">Estamos comprometidos con:</h4>
+      <ul class="about__commit-list">
+        <li>✔️ Cumplir la normativa ambiental vigente</li>
+        <li>✔️ Generar bienestar en nuestras comunidades</li>
+        <li>✔️ Promover la economía circular</li>
+      </ul>
+
+      <a href="nosotros.html" class="btn btn--primary">Conoce Más Sobre Nosotros</a>
+    </div>
+
+    <!-- Video (fills full height of its box) -->
+    <div class="about__media">
+      <div class="video-box" aria-label="Video institucional">
+        <iframe
+          src="https://player.vimeo.com/video/1115942104?badge=0&autopause=1&title=0&byline=0&portrait=0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          title="Videocorporativo">
+        </iframe>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Scoped fixes for this section only -->
+<style>
+  /* Grid + alignment */
+  #about .about__grid{
+    display:grid;
+    grid-template-
+</style>
 
   <!-- Servicios (unchanged) -->
   <section class="services" id="servicios">
