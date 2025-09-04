@@ -9,46 +9,58 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/global.css" />
 
-  <!-- Page-level tweaks for this screen -->
+  <!-- OVERRIDES for hero cover, about video height, and social tiles -->
   <style>
-    /* 1) Hide top banner on mobile */
-    @media (max-width: 640px){
-      .topbar{display:none}
+    /* HERO: force background video to "cover" the entire hero width/height */
+    .hero{position:relative; min-height:90vh; display:flex; align-items:center; overflow:hidden; background:#111}
+    .hero__bg{position:absolute; inset:0; z-index:0; overflow:hidden}
+    /* Centered scaler that guarantees cover with any aspect ratio (no black bars) */
+    .vimeo-cover{
+      position:absolute; top:50%; left:50%;
+      width:100vw; height:56.25vw;            /* 16:9 based on viewport width */
+      min-width:177.78vh; min-height:100vh;   /* fallback to viewport height */
+      transform:translate(-50%,-50%);
     }
+    .vimeo-cover iframe{width:100%; height:100%; display:block}
 
-    /* 2) Extra padding for navbar CTA */
-    .header__cta{padding:1rem 1.35rem; border-radius:16px}
-
-    /* 3) HERO: Vimeo background */
-    .hero{position:relative; min-height:80vh; display:flex; align-items:center; overflow:hidden; background:#111}
-    .hero__bg{position:absolute; inset:0; z-index:0; pointer-events:none}
-    .hero__bg .vimeo-wrap{position:absolute; inset:0}
     .hero__overlay{position:absolute; inset:0; background:rgba(0,0,0,.5); z-index:1}
     .hero__content{position:relative; z-index:2}
 
-    /* 4) Clientes padding + centered + icon for conjuntos */
-    .clients{padding:90px 0}
-    .client-row{justify-content:center}
-
-    /* 5) About: video box with controls, not muted, user can play */
+    /* ABOUT: video must fill the full height of its box */
+    .about__grid{align-items:stretch}
+    .about__media{display:flex}
     .about__media .video-box{
+      height:100%; min-height:420px;          /* same visual weight as the text column */
       border-radius:18px; overflow:hidden; box-shadow:var(--shadow-md);
-      position:relative; padding-top:56.25%;
+      position:relative; padding-top:0;       /* remove aspect padding */
     }
     .about__media .video-box iframe{position:absolute; inset:0; width:100%; height:100%}
 
-    /* Social feeds section */
+    /* SOCIAL tiles (FB + IG), no Twitter */
     .social-section{padding:70px 0; background:#f7f9fb}
     .social-grid{display:grid; gap:20px; grid-template-columns:1fr}
     @media (min-width:900px){ .social-grid{grid-template-columns:1fr 1fr} }
-    .social-card{background:#fff; border:1px solid var(--gray-200); border-radius:14px; padding:10px; box-shadow:var(--shadow-sm)}
-    .social-card h3{margin:8px 10px 6px; font-size:1rem}
-    .insta-note{color:var(--gray-600); padding:0 10px 10px; font-size:.9rem}
+    .social-card{
+      background:#fff; border:1px solid var(--gray-200); border-radius:14px;
+      padding:14px; box-shadow:var(--shadow-sm);
+    }
+    .social-card h3{margin:4px 6px 10px; font-size:1.1rem}
+    .fb-embed iframe{width:100%; border:none; overflow:hidden; display:block; height:460px}
+
+    .ig-tiles{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+    @media (max-width:640px){ .ig-tiles{grid-template-columns:repeat(2,1fr)} }
+    .ig-tile{
+      position:relative; border-radius:12px; overflow:hidden; aspect-ratio:1/1;
+      background:#e5e7eb; box-shadow:var(--shadow-sm);
+    }
+    .ig-tile img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .25s ease}
+    .ig-tile:hover img{transform:scale(1.03)}
+    .insta-note{color:var(--gray-600); font-size:.9rem; margin-top:10px}
   </style>
 </head>
 <body>
 
-  <!-- Top bar (hidden on mobile via CSS above) -->
+  <!-- Top bar (hidden on mobile by your global.css media rule) -->
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
@@ -65,7 +77,7 @@
     </div>
   </div>
 
-  <!-- Header / Nav (reduced links as already discussed) -->
+  <!-- Header / Nav (same trimmed menu) -->
   <header class="header">
     <div class="container header__inner">
       <a href="index.html" class="brand" aria-label="GrasasBio inicio">
@@ -91,16 +103,15 @@
     </div>
   </header>
 
-  <!-- HERO with Vimeo background -->
+  <!-- HERO with Vimeo background (full-width cover) -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true">
-      <div class="vimeo-wrap">
+      <div class="vimeo-cover">
         <iframe
           src="https://player.vimeo.com/video/1115942104?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+          referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
       </div>
     </div>
@@ -142,7 +153,7 @@
   <section class="clients">
     <div class="container" style="text-align:center">
       <h2 class="section-title">Trabajamos con Diferentes Tipos de Clientes</h2>
-      <div class="client-row">
+      <div class="client-row" style="justify-content:center">
         <div class="client-pill"><i data-lucide="utensils"></i><span>Restaurantes</span></div>
         <div class="client-pill"><i data-lucide="school"></i><span>Centros Educativos</span></div>
         <div class="client-pill"><i data-lucide="building-2"></i><span>Cadenas</span></div>
@@ -156,7 +167,7 @@
     </div>
   </section>
 
-  <!-- Quiénes Somos (with playable Vimeo video, not muted) -->
+  <!-- Quiénes Somos (video fills full box height) -->
   <section class="about" id="about">
     <div class="container about__grid">
       <div class="about__text">
@@ -187,7 +198,7 @@
     </div>
   </section>
 
-  <!-- Servicios -->
+  <!-- Servicios (unchanged) -->
   <section class="services" id="servicios">
     <div class="container">
       <div class="services__intro">
@@ -219,7 +230,7 @@
     </div>
   </section>
 
-  <!-- Aliados -->
+  <!-- Aliados (unchanged) -->
   <section class="aliados">
     <div class="container">
       <h2 class="section-title">Nuestros Aliados</h2>
@@ -239,7 +250,7 @@
     </div>
   </section>
 
-  <!-- Impacto ACU -->
+  <!-- Impacto ACU (unchanged) -->
   <section class="impacto">
     <div class="container">
       <h2 class="section-title">El Impacto de la Mala Disposición del ACU</h2>
@@ -259,28 +270,53 @@
     </div>
   </section>
 
-  <!-- Social feeds (before map) -->
+  <!-- Social feeds: Facebook + Instagram tiles (no Twitter) -->
   <section class="social-section">
     <div class="container">
       <h2 class="section-title" style="text-align:center">Síguenos en Redes</h2>
       <div class="social-grid">
+        <!-- Facebook card -->
         <div class="social-card">
           <h3>Facebook</h3>
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrasasbio%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
-            width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
+          <div class="fb-embed">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrasasbio%2F&tabs=timeline&width=500&height=460&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+              scrolling="no" frameborder="0"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+          </div>
         </div>
+
+        <!-- Instagram tiles card (static tiles linking to profile; replace images as desired) -->
         <div class="social-card">
-          <h3>X (Twitter)</h3>
-          <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/grasasbio">Tweets by grasasbio</a>
+          <h3>Instagram</h3>
+          <div class="ig-tiles">
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/team_picture-warehouse.png" alt="Instagram tile 1">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/team-picture-warehouse-2.png" alt="Instagram tile 2">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/team-picture-office.JPG" alt="Instagram tile 3">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/recycling-process.jpg" alt="Instagram tile 4">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/hero-fleet.jpg" alt="Instagram tile 5">
+            </a>
+            <a class="ig-tile" href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">
+              <img src="src/assets/logo.png" alt="Instagram tile 6">
+            </a>
+          </div>
+          <p class="insta-note">
+            Síguenos en Instagram: <a href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">@grasas.bio</a>
+          </p>
         </div>
       </div>
-      <p class="insta-note">Instagram: <a href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">@grasas.bio</a></p>
     </div>
   </section>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   <!-- Google Maps -->
   <section class="map-section">
@@ -296,7 +332,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer (unchanged) -->
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
@@ -367,7 +403,7 @@
     </div>
   </footer>
 
-  <!-- Icons & minor JS (reuse your global.js if you prefer) -->
+  <!-- Icons + small JS (nav + counters) -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function(){
