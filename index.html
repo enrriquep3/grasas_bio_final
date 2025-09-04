@@ -5,119 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GrasasBio S.A.S. — Transformamos tu aceite usado en soluciones sostenibles</title>
 
-  <!-- Favicon (optional if you already include it globally) -->
   <link rel="icon" type="image/png" href="src/assets/favicon_new.png" />
-
-  <!-- Professional font stack -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Global stylesheet (keep your existing one) -->
   <link rel="stylesheet" href="css/global.css" />
 
-  <!-- Page-specific polish (small, targeted overrides only) -->
+  <!-- Page-level tweaks for this screen -->
   <style>
-    /* Ensure centered nav and clean header alignment */
-    .header__inner{grid-template-columns:auto 1fr auto}
-    .nav__list{justify-content:center}
-    .brand__text{white-space:nowrap}
-
-    /* Topbar ISCC (new asset path) */
-    .topbar__iscc{height:22px; width:auto}
-
-    /* Client types spacing & layout */
-    .clients{padding:72px 0}
-    .clients .section-title{margin-bottom:18px}
-    .client-row{
-      display:flex; gap:16px; flex-wrap:wrap;
-      margin-top:14px; margin-bottom:22px;
+    /* 1) Hide top banner on mobile */
+    @media (max-width: 640px){
+      .topbar{display:none}
     }
-    .client-pill{
-      display:flex; align-items:center; gap:10px;
-      padding:14px 18px; border-radius:16px;
-      background:var(--green-100); color:var(--green-700);
-      font-weight:800; box-shadow:var(--shadow-sm);
-    }
-    .client-pill i{width:22px; height:22px}
 
-    /* About image: keep height tied to text and center vertically */
-    .about__grid{align-items:stretch}
-    .about__media{display:grid}
-    .about__media .media-box{
+    /* 2) Extra padding for navbar CTA */
+    .header__cta{padding:1rem 1.35rem; border-radius:16px}
+
+    /* 3) HERO: Vimeo background */
+    .hero{position:relative; min-height:80vh; display:flex; align-items:center; overflow:hidden; background:#111}
+    .hero__bg{position:absolute; inset:0; z-index:0; pointer-events:none}
+    .hero__bg .vimeo-wrap{position:absolute; inset:0}
+    .hero__overlay{position:absolute; inset:0; background:rgba(0,0,0,.5); z-index:1}
+    .hero__content{position:relative; z-index:2}
+
+    /* 4) Clientes padding + centered + icon for conjuntos */
+    .clients{padding:90px 0}
+    .client-row{justify-content:center}
+
+    /* 5) About: video box with controls, not muted, user can play */
+    .about__media .video-box{
       border-radius:18px; overflow:hidden; box-shadow:var(--shadow-md);
-      min-height:320px; height:100%;
+      position:relative; padding-top:56.25%;
     }
-    .about__media img{
-      width:100%; height:100%; object-fit:cover; object-position:center;
-      display:block;
-    }
+    .about__media .video-box iframe{position:absolute; inset:0; width:100%; height:100%}
 
-    /* Services: icon above titles */
-    .cards .card__icon{
-      display:grid; place-items:center;
-      width:56px; height:56px; border-radius:14px;
-      background:var(--green-100); margin:0 auto 10px;
-    }
-    .cards .card__icon i{width:26px; height:26px; color:var(--green-700)}
-
-    /* Aliados grid */
-    .aliados{padding:70px 0; background:#f7f9fb}
-    .aliados-grid{
-      display:grid; gap:18px;
-      grid-template-columns:repeat(2,1fr);
-    }
-    @media (min-width:640px){ .aliados-grid{grid-template-columns:repeat(3,1fr)} }
-    @media (min-width:1024px){ .aliados-grid{grid-template-columns:repeat(5,1fr)} }
-    .aliado{
-      background:#fff; border:1px solid var(--gray-200); border-radius:14px;
-      padding:14px; height:110px; display:flex; align-items:center; justify-content:center;
-      box-shadow:var(--shadow-sm);
-    }
-    .aliado img{max-height:80px; width:auto; object-fit:contain}
-
-    /* Impacto ACU cards */
-    .impacto{padding:84px 0}
-    .impact-groups{
-      display:grid; gap:18px; margin-top:16px;
-      grid-template-columns:1fr;
-    }
-    @media (min-width:900px){ .impact-groups{grid-template-columns:repeat(3,1fr)} }
-    .impact-card{
-      background:#fff; border:1px solid #fca5a5; border-radius:14px; padding:16px;
-      box-shadow:var(--shadow-sm); display:flex; gap:10px; align-items:flex-start; color:#b91c1c; font-weight:700
-    }
-    .impact-card i{width:22px; height:22px}
-
-    /* Map section (as supplied) */
-    .map-section{padding:70px 0; background:#fff}
-    .map-container{margin-top:14px; border-radius:12px; overflow:hidden; box-shadow:var(--shadow-sm)}
-
-    /* Footer (new structure) */
-    .footer{background:#0d4022; color:#d6f0e0}
-    .footer-content{
-      display:grid; gap:26px; padding:36px 0;
-      grid-template-columns:1fr;
-    }
-    @media (min-width:980px){ .footer-content{grid-template-columns:2fr 1fr 1fr 2fr} }
-    .footer-logo{display:flex; align-items:center; gap:.75rem}
-    .footer-logo-img{height:36px}
-    .footer-company h3{margin:0}
-    .footer-company p{margin:0; opacity:.9}
-    .footer-certification{display:flex; align-items:center; gap:.75rem; margin-top:.5rem}
-    .footer-iscc{height:28px}
-    .footer-social{display:flex; gap:.6rem; margin-top:.4rem}
-    .social-link{color:#d6f0e0; text-decoration:none}
-    .social-link:hover{color:#fff}
-    .footer-links, .footer-services{list-style:none; padding:0; margin:0}
-    .footer-links a{color:#d6f0e0; text-decoration:none}
-    .footer-links a:hover{text-decoration:underline}
-    .footer-contact .contact-item{display:flex; gap:.6rem; margin:.4rem 0}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.15); padding:10px 0}
-    .footer-bottom-content{display:flex; justify-content:space-between; flex-wrap:wrap; gap:.75rem}
+    /* Social feeds section */
+    .social-section{padding:70px 0; background:#f7f9fb}
+    .social-grid{display:grid; gap:20px; grid-template-columns:1fr}
+    @media (min-width:900px){ .social-grid{grid-template-columns:1fr 1fr} }
+    .social-card{background:#fff; border:1px solid var(--gray-200); border-radius:14px; padding:10px; box-shadow:var(--shadow-sm)}
+    .social-card h3{margin:8px 10px 6px; font-size:1rem}
+    .insta-note{color:var(--gray-600); padding:0 10px 10px; font-size:.9rem}
   </style>
 </head>
 <body>
 
-  <!-- ============ Top bar ============ -->
+  <!-- Top bar (hidden on mobile via CSS above) -->
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__left">
@@ -134,54 +65,50 @@
     </div>
   </div>
 
- <header class="header">
-  <div class="container header__inner">
-    <!-- Brand -->
-    <a href="index.html" class="brand" aria-label="GrasasBio inicio">
-      <img src="src/assets/logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
-      <div class="brand__text">
-        <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
-      </div>
-    </a>
+  <!-- Header / Nav (reduced links as already discussed) -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="GrasasBio inicio">
+        <img src="src/assets/logo.png" alt="GrasasBio S.A.S." class="brand__logo" />
+        <div class="brand__text">
+          <strong>GrasasBio</strong><span class="brand__sub">Recolección de Aceites Usados</span>
+        </div>
+      </a>
 
-    <!-- Centered Nav -->
-    <nav class="nav" aria-label="Principal">
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
-        <i data-lucide="menu"></i>
-      </button>
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
+          <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
+          <li><a class="nav__link" href="nosotros.html">QUIÉNES SOMOS</a></li>
+          <li><a class="nav__link" href="comolohacemos.html">¿CÓMO LO HACEMOS?</a></li>
+          <li><a class="nav__link" href="acu.html">¿QUÉ ES EL ACU?</a></li>
+          <li class="nav__cta-mobile"><a class="btn btn--primary" href="contacto.html#form">Solicita tu Recolección</a></li>
+        </ul>
+      </nav>
 
-      <ul class="nav__list" id="navList">
-        <li><a class="nav__link is-active" href="index.html">INICIO</a></li>
-        <li><a class="nav__link" href="servicios.html">SERVICIOS</a></li>
-        <li><a class="nav__link" href="nosotros.html">QUIÉNES SOMOS</a></li>
-        <li><a class="nav__link" href="comolohacemos.html">¿CÓMO LO HACEMOS?</a></li>
-        <li><a class="nav__link" href="acu.html">¿QUÉ ES EL ACU?</a></li>
+      <a class="btn btn--cta header__cta" href="contacto.html#form">Solicita tu Recolección</a>
+    </div>
+  </header>
 
-        <!-- CTA visible in the dropdown on mobile -->
-        <li class="nav__cta-mobile">
-          <a class="btn btn--primary" href="contacto.html#form">Solicita tu Recolección</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Right CTA (desktop) -->
-    <a class="btn btn--cta header__cta" href="contacto.html#form">Solicita tu Recolección</a>
-  </div>
-</header>
-
-
-  <!-- ============ HERO (video) ============ -->
+  <!-- HERO with Vimeo background -->
   <section class="hero">
-    <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="src/assets/hero-fleet.jpg">
-      <source src="src/assets/hero-video1.mp4" type="video/mp4" />
-    </video>
+    <div class="hero__bg" aria-hidden="true">
+      <div class="vimeo-wrap">
+        <iframe
+          src="https://player.vimeo.com/video/1115942104?badge=0&autopause=0&autoplay=1&muted=1&loop=1&background=1"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        </iframe>
+      </div>
+    </div>
     <div class="hero__overlay"></div>
 
     <div class="container hero__content">
       <h1 class="hero__title">
-        Transformamos tu
-        <span class="text-grad--orange">aceite de cocina usado</span>
-        en
+        Transformamos tu <span class="text-grad--orange">aceite de cocina usado</span> en
         <span class="text-grad--green">soluciones sostenibles</span>
       </h1>
       <p class="hero__subtitle">Únete al cambio con <strong>GRASASBIO S.A.S.</strong></p>
@@ -191,8 +118,9 @@
       </div>
     </div>
   </section>
+  <script src="https://player.vimeo.com/api/player.js" defer></script>
 
-  <!-- ============ STATS (slow counters) ============ -->
+  <!-- Stats -->
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat">
@@ -210,43 +138,32 @@
     </div>
   </section>
 
-  <!-- ============ CLIENT TYPES ============ -->
+  <!-- Clientes -->
   <section class="clients">
-    <div class="container">
+    <div class="container" style="text-align:center">
       <h2 class="section-title">Trabajamos con Diferentes Tipos de Clientes</h2>
-
       <div class="client-row">
-        <div class="client-pill"><i data-lucide="utensils"></i> <span>Restaurantes</span></div>
-        <div class="client-pill"><i data-lucide="school"></i> <span>Centros Educativos</span></div>
-        <div class="client-pill"><i data-lucide="building-2"></i> <span>Cadenas</span></div>
-        <div class="client-pill"><i data-lucide="factory"></i> <span>Industria Alimentaria</span></div>
-        <div class="client-pill"><i data-lucide="sandwich"></i> <span>Panaderías</span></div>
-        <div class="client-pill"><i data-lucide="buildings"></i> <span>Conjuntos Residenciales</span></div>
-        <div class="client-pill"><i data-lucide="shopping-cart"></i> <span>Supermercados</span></div>
-        <div class="client-pill"><i data-lucide="truck"></i> <span>Catering</span></div>
+        <div class="client-pill"><i data-lucide="utensils"></i><span>Restaurantes</span></div>
+        <div class="client-pill"><i data-lucide="school"></i><span>Centros Educativos</span></div>
+        <div class="client-pill"><i data-lucide="building-2"></i><span>Cadenas</span></div>
+        <div class="client-pill"><i data-lucide="factory"></i><span>Industria Alimentaria</span></div>
+        <div class="client-pill"><i data-lucide="sandwich"></i><span>Panaderías</span></div>
+        <div class="client-pill"><i data-lucide="buildings"></i><span>Conjuntos Residenciales</span></div>
+        <div class="client-pill"><i data-lucide="shopping-cart"></i><span>Supermercados</span></div>
+        <div class="client-pill"><i data-lucide="truck"></i><span>Catering</span></div>
       </div>
-
-      <div class="clients__cta" style="text-align:center">
-        <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="btn btn--accent">Únete con Nosotros</a>
-      </div>
+      <a href="https://wa.me/573005995277" target="_blank" rel="noopener" class="btn btn--accent">Únete con Nosotros</a>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
+  <!-- Quiénes Somos (with playable Vimeo video, not muted) -->
   <section class="about" id="about">
     <div class="container about__grid">
       <div class="about__text">
         <h2 class="section-title">Quiénes Somos</h2>
         <h3 class="about__subtitle">GRASASBIO S.A.S.</h3>
-        <p>
-          Somos una empresa colombiana líder en la gestión de
-          <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.
-        </p>
-        <p>
-          Brindamos servicios al sector gastronómico e industrial, cumpliendo con altos estándares de
-          calidad, seguridad y atención al cliente. Nuestro propósito es reducir el impacto ambiental y
-          proteger la salud pública a través de una operación ética, sostenible y responsable.
-        </p>
+        <p>Somos una empresa colombiana líder en la gestión de <strong>aceites de cocina usados (ACU)</strong> y otras grasas vegetales y animales.</p>
+        <p>Brindamos servicios al sector gastronómico e industrial, cumpliendo con altos estándares de calidad, seguridad y atención al cliente. Nuestro propósito es reducir el impacto ambiental y proteger la salud pública a través de una operación ética, sostenible y responsable.</p>
         <h4 class="about__commit-title">Estamos comprometidos con:</h4>
         <ul class="about__commit-list">
           <li>✔️ Cumplir la normativa ambiental vigente</li>
@@ -257,66 +174,56 @@
       </div>
 
       <div class="about__media">
-        <div class="media-box">
-          <img src="src/assets/team_picture-warehouse.png" alt="Equipo en bodega" />
+        <div class="video-box" aria-label="Video institucional">
+          <iframe 
+            src="https://player.vimeo.com/video/1115942104?badge=0&autopause=1&title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Videocorporativo">
+          </iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ SERVICES ============ -->
+  <!-- Servicios -->
   <section class="services" id="servicios">
     <div class="container">
       <div class="services__intro">
         <h2 class="section-title">Nuestros Servicios</h2>
-        <p class="section-desc">
-          Ofrecemos soluciones integrales para la gestión responsable de aceites usados,
-          adaptándonos a las necesidades específicas de cada cliente.
-        </p>
+        <p class="section-desc">Ofrecemos soluciones integrales para la gestión responsable de aceites usados, adaptándonos a las necesidades específicas de cada cliente.</p>
       </div>
-
       <div class="cards">
         <article class="card fade-in" style="--delay:0ms">
           <div class="card__icon"><i data-lucide="truck"></i></div>
           <h3 class="card__title">Recolección Especializada</h3>
-          <p class="card__text">
-            Servicio de recolección programada con vehículos especializados y personal capacitado.
-          </p>
+          <p class="card__text">Servicio de recolección programada con vehículos especializados y personal capacitado.</p>
         </article>
-
         <article class="card fade-in" style="--delay:100ms">
           <div class="card__icon"><i data-lucide="recycle"></i></div>
           <h3 class="card__title">Procesamiento Sostenible</h3>
-          <p class="card__text">
-            Transformamos aceites usados en productos de valor agregado mediante procesos eco-amigables.
-          </p>
+          <p class="card__text">Transformamos aceites usados en productos de valor agregado mediante procesos eco-amigables.</p>
         </article>
-
         <article class="card fade-in" style="--delay:200ms">
           <div class="card__icon"><i data-lucide="shield-check"></i></div>
           <h3 class="card__title">Cumplimiento Normativo</h3>
-          <p class="card__text">
-            Garantizamos el cumplimiento de toda la normativa ambiental vigente.
-          </p>
+          <p class="card__text">Garantizamos el cumplimiento de toda la normativa ambiental vigente.</p>
         </article>
-
         <article class="card fade-in" style="--delay:300ms">
           <div class="card__icon"><i data-lucide="award"></i></div>
           <h3 class="card__title">Certificación y Trazabilidad</h3>
-          <p class="card__text">
-            Proveemos certificados y seguimiento completo de todo el proceso de gestión.
-          </p>
+          <p class="card__text">Proveemos certificados y seguimiento completo de todo el proceso de gestión.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ ALIADOS ============ -->
+  <!-- Aliados -->
   <section class="aliados">
     <div class="container">
       <h2 class="section-title">Nuestros Aliados</h2>
       <p class="section-desc">Empresas y entidades que confían en nuestra gestión responsable de ACU</p>
-
       <div class="aliados-grid">
         <div class="aliado"><img src="src/assets/CAM-aliado.png" alt="CAM" /></div>
         <div class="aliado"><img src="src/assets/CorantioquiaSoloJPG-300x231-aliado.jpg" alt="Corantioquia" /></div>
@@ -328,19 +235,15 @@
         <div class="aliado"><img src="src/assets/corpoboyaca logo-aliado.jpg" alt="Corpoboyacá" /></div>
         <div class="aliado"><img src="src/assets/logo_corpoamazonia-aliado.jpg" alt="Corpoamazonia" /></div>
       </div>
-
       <p class="aliados__note">En espera del envío de más imágenes en PNG para incluirlas</p>
     </div>
   </section>
 
-  <!-- ============ IMPACTO ACU ============ -->
+  <!-- Impacto ACU -->
   <section class="impacto">
     <div class="container">
       <h2 class="section-title">El Impacto de la Mala Disposición del ACU</h2>
-      <p class="section-desc">
-        La mala disposición del Aceite de Cocina Usado (ACU) tiene consecuencias ambientales y sanitarias graves.
-      </p>
-
+      <p class="section-desc">La mala disposición del Aceite de Cocina Usado (ACU) tiene consecuencias ambientales y sanitarias graves.</p>
       <div class="impact-groups">
         <div class="impact-card"><i data-lucide="droplets"></i> Contamina cuerpos de agua y suelos</div>
         <div class="impact-card"><i data-lucide="leaf"></i> Afecta negativamente la fauna y flora local</div>
@@ -349,18 +252,37 @@
         <div class="impact-card"><i data-lucide="heart-pulse"></i> Aumenta riesgos para la salud pública</div>
         <div class="impact-card"><i data-lucide="wind"></i> Genera malos olores y atrae plagas</div>
       </div>
-
       <div class="dato" style="margin-top:24px">
         <h3 class="dato__title">📌 Dato Impactante</h3>
-        <p>
-          Un solo litro de ACU puede contaminar hasta <strong>40.000 litros de agua</strong>,
-          lo que equivale al consumo doméstico de una persona durante un año.
-        </p>
+        <p>Un solo litro de ACU puede contaminar hasta <strong>40.000 litros de agua</strong>, lo que equivale al consumo doméstico de una persona durante un año.</p>
       </div>
     </div>
   </section>
 
-  <!-- Google Maps Section -->
+  <!-- Social feeds (before map) -->
+  <section class="social-section">
+    <div class="container">
+      <h2 class="section-title" style="text-align:center">Síguenos en Redes</h2>
+      <div class="social-grid">
+        <div class="social-card">
+          <h3>Facebook</h3>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrasasbio%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false"
+            width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+        <div class="social-card">
+          <h3>X (Twitter)</h3>
+          <a class="twitter-timeline" data-height="500" data-dnt="true" href="https://twitter.com/grasasbio">Tweets by grasasbio</a>
+        </div>
+      </div>
+      <p class="insta-note">Instagram: <a href="https://www.instagram.com/grasas.bio/" target="_blank" rel="noopener">@grasas.bio</a></p>
+    </div>
+  </section>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <!-- Google Maps -->
   <section class="map-section">
     <div class="container">
       <h2 class="section-title">Nuestra Ubicación</h2>
@@ -378,57 +300,37 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-
         <div class="footer-section">
           <div class="footer-logo">
             <img src="src/assets/grasasbio-logo.png" alt="GrasasBio" class="footer-logo-img">
-            <div class="footer-company">
-              <h3>GrasasBio</h3>
-              <p>S.A.S.</p>
-            </div>
+            <div class="footer-company"><h3>GrasasBio</h3><p>S.A.S.</p></div>
           </div>
-
           <div class="footer-certification">
             <img src="src/assets/iscc-logo.png" alt="ISCC Certificación" class="footer-iscc">
-            <div class="footer-cert-text">
-              <p>Certificación Internacional</p>
-              <p>de Sostenibilidad y Carbono</p>
-            </div>
+            <div class="footer-cert-text"><p>Certificación Internacional</p><p>de Sostenibilidad y Carbono</p></div>
           </div>
-
-          <p class="footer-description">
-            Líder en Colombia en la gestión responsable de aceites de cocina usados y grasas vegetales y animales. 
-            Promovemos soluciones sostenibles para un futuro más verde.
-          </p>
-
+          <p class="footer-description">Líder en Colombia en la gestión responsable de aceites de cocina usados y grasas vegetales y animales. Promovemos soluciones sostenibles para un futuro más verde.</p>
           <div class="footer-social">
-            <a href="https://www.facebook.com/grasasbio/?locale=es_LA" class="social-link" aria-label="Facebook">
-              <i data-lucide="facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/grasas.bio/?hl=es" class="social-link" aria-label="Instagram">
-              <i data-lucide="instagram"></i>
-            </a>
-            <a href="https://x.com/grasasbio" class="social-link" aria-label="X">
-              <i data-lucide="twitter"></i>
-            </a>
+            <a href="https://www.facebook.com/grasasbio/?locale=es_LA" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="https://www.instagram.com/grasas.bio/?hl=es" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="https://x.com/grasasbio" class="social-link" aria-label="X"><i data-lucide="twitter"></i></a>
           </div>
         </div>
 
         <div class="footer-section">
-  <h4>Enlaces Rápidos</h4>
-  <ul class="footer-links">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="nosotros.html">Quiénes Somos</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="comolohacemos.html">¿Cómo lo Hacemos?</a></li>
-    <li><a href="acu.html">ACU</a></li>
-    <li><a href="normatividad.html">Normatividad</a></li>
-    <li><a href="grabitec.html">Grabitec</a></li>
-    <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
-  </ul>
-</div>
-
+          <h4>Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Quiénes Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="comolohacemos.html">¿Cómo lo Hacemos?</a></li>
+            <li><a href="acu.html">ACU</a></li>
+            <li><a href="normatividad.html">Normatividad</a></li>
+            <li><a href="grabitec.html">Grabitec</a></li>
+            <li><a href="puntos-limpios.html">Puntos Limpios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
 
         <div class="footer-section">
           <h4>Nuestros Servicios</h4>
@@ -444,21 +346,11 @@
         <div class="footer-section">
           <h4>Contacto</h4>
           <div class="footer-contact">
-            <div class="contact-item">
-              <i data-lucide="phone"></i>
-              <a href="tel:6017618796">(601) 7618796</a>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="mail"></i>
-              <a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a>
-            </div>
-            <div class="contact-item">
-              <i data-lucide="map-pin"></i>
-              <div>Calle 9 #32a-83 Bogotá<br/>Cundinamarca, Colombia</div>
-            </div>
+            <div class="contact-item"><i data-lucide="phone"></i><a href="tel:6017618796">(601) 7618796</a></div>
+            <div class="contact-item"><i data-lucide="mail"></i><a href="mailto:comercial@grasasbio.com">comercial@grasasbio.com</a></div>
+            <div class="contact-item"><i data-lucide="map-pin"></i><div>Calle 9 #32a-83 Bogotá<br>Cundinamarca, Colombia</div></div>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -475,14 +367,11 @@
     </div>
   </footer>
 
-  <!-- Lucide icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
-
-  <!-- Minimal page JS (nav, video, slower counters) -->
+  <!-- Icons & minor JS (reuse your global.js if you prefer) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
-    // Run once DOM is ready (and lucide is available)
     document.addEventListener('DOMContentLoaded', function(){
-      try { if (window.lucide) window.lucide.createIcons(); } catch(e){}
+      try { lucide.createIcons(); } catch(e){}
 
       // Mobile nav
       const navToggle = document.getElementById('navToggle');
@@ -495,16 +384,7 @@
         });
       }
 
-      // Video: autoplay nudge
-      const v = document.querySelector('.hero__video');
-      if (v){
-        v.muted = true; v.playsInline = true;
-        const play = () => v.play().catch(()=>{});
-        if (document.readyState === 'complete') play(); else window.addEventListener('load', play);
-        ['touchstart','click'].forEach(evt => window.addEventListener(evt, play, { once:true, passive:true }));
-      }
-
-      // Slow counters (3.5s by attribute)
+      // Counters
       function animateCounter(el, target, duration){
         const start = 0, t0 = performance.now();
         function frame(now){
@@ -523,24 +403,21 @@
             if (entry.isIntersecting){
               const el = entry.target;
               if (el.dataset.animated === '1') return;
-              el.dataset.animated = '1';
-              const target = parseInt(el.getAttribute('data-target'), 10) || 0;
-              const duration = parseInt(el.getAttribute('data-duration'), 10) || 3500;
-              animateCounter(el, target, duration);
+              el.dataset.animated='1';
+              const target = parseInt(el.getAttribute('data-target'),10)||0;
+              const duration = parseInt(el.getAttribute('data-duration'),10)||3500;
+              animateCounter(el,target,duration);
               io.unobserve(el);
             }
           });
-        }, { threshold: 0.4 });
+        },{threshold:0.4});
         counters.forEach(el=>io.observe(el));
       } else {
         counters.forEach(el=>{
-          const target = parseInt(el.getAttribute('data-target'), 10) || 0;
-          const duration = parseInt(el.getAttribute('data-duration'), 10) || 3500;
-          animateCounter(el, target, duration);
+          animateCounter(el, parseInt(el.dataset.target,10)||0, parseInt(el.dataset.duration,10)||3500);
         });
       }
     });
   </script>
 </body>
 </html>
-
